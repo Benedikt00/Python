@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html class="hydrated" culture-name="de" lang="de"><head>
+<!-- Load balancer probe online: {60A423A7-DE9A-4932-BC0D-3C38E65F0B65} -->
+<meta charset="utf-8"/><style data-styles="">solarweb-weather-widget,solarweb-weather-forecast,solarweb-current-weather,solarweb-forecast-day,solarweb-current-weather-parameter,solarweb-candlestick{visibility:hidden}.hydrated{visibility:inherit}</style>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0" name="viewport"/>
+<meta content="#4d4d4d" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="Fronius Solar.web" name="apple-mobile-web-app-title"/>
+<base href=""/>
+<title>5kWp Simbürger</title>
+<style>solarweb-weather-widget{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:calc(100% - 38px)}@media (min-width: 992px) and (max-width: 1199px), (min-width: 1200px){solarweb-weather-widget{-ms-flex-direction:row;flex-direction:row}}solarweb-weather-widget solarweb-current-weather{display:-ms-flexbox;display:flex}@media (min-width: 992px) and (max-width: 1199px), (min-width: 1200px){solarweb-weather-widget solarweb-current-weather{-ms-flex-preferred-size:38.2%;flex-basis:38.2%}}solarweb-weather-widget solarweb-weather-forecast{display:-ms-flexbox;display:flex;-ms-flex-preferred-size:61.8%;flex-basis:61.8%}</style><style>solarweb-current-weather{-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding:2% 1.5%;border-right:2px solid #eceded}@media (max-width: 479px), (min-width: 480px) and (max-width: 767px), (min-width: 768px) and (max-width: 991px){solarweb-current-weather{padding:4% 3%;border-right:none;border-bottom:2px solid #eceded}}solarweb-current-weather>.temp-container{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%;-ms-flex-wrap:wrap;flex-wrap:wrap}solarweb-current-weather>.temp-container .status{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:center;justify-content:center;width:100%}solarweb-current-weather>.temp-container .status .icon{width:22%;margin-right:2%}solarweb-current-weather>.temp-container .status .temperature{color:#666769;font-size:257%;margin-left:5%;-ms-flex-item-align:center;align-self:center}solarweb-current-weather>.temp-container .description{color:#a6a8aa;font-size:114%;text-align:center;margin-top:2%;padding:0 5%}solarweb-current-weather.mod-light{-ms-flex-pack:space-evenly;justify-content:space-evenly}solarweb-current-weather.mod-light>.temp-container{height:auto}solarweb-current-weather .additional-infos{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;width:100%;-ms-flex-pack:space-evenly;justify-content:space-evenly;-ms-flex-align:stretch;align-items:stretch;margin-top:6%}solarweb-current-weather .parameter-separator{width:1px;background:-webkit-gradient(linear, left top, left bottom, from(rgba(75, 75, 77, 0)), color-stop(30%, rgba(75, 75, 77, 0.2)), color-stop(60%, rgba(75, 75, 77, 0.2)), to(rgba(75, 75, 77, 0)));background:linear-gradient(to bottom, rgba(75, 75, 77, 0) 0%, rgba(75, 75, 77, 0.2) 30%, rgba(75, 75, 77, 0.2) 60%, rgba(75, 75, 77, 0) 100%)}</style><style>solarweb-weather-forecast{-ms-flex-direction:column;flex-direction:column}solarweb-weather-forecast>.days{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:distribute;justify-content:space-around;-ms-flex-wrap:wrap;flex-wrap:wrap;overflow:hidden;margin:1.5% 3%;position:relative;height:100%}solarweb-weather-forecast>.days.mod-light{margin:15px}@media (max-width: 479px), (min-width: 480px) and (max-width: 767px), (min-width: 768px) and (max-width: 991px){solarweb-weather-forecast>.days{height:230px;margin:2% 4%}}.expected-yield{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-align:stretch;align-items:stretch;-ms-flex-pack:stretch;justify-content:stretch;text-align:center;max-width:96%;margin:0 auto;margin-bottom:2%;border:1px solid #a6a8aa}@media (max-width: 479px), (min-width: 480px) and (max-width: 767px), (min-width: 768px) and (max-width: 991px){.expected-yield{max-width:96vmax;margin-bottom:2vmax;-ms-flex-wrap:wrap;flex-wrap:wrap}}@media (max-width: 479px){.expected-yield{margin:0.5vmax 2vmax 2vmax 2vmax}}.expected-yield>.day-yield{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;background-color:#ffbb1d;color:#ffffff;padding:5px 15px;min-width:0;-ms-flex-positive:1;flex-grow:1}.expected-yield>.day-yield>.value{font-size:100%;font-weight:700}.expected-yield>.day-yield>.day{font-size:86%;opacity:0.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.expected-yield>.day-yield:first-child{position:relative}.expected-yield>.day-yield:first-child::after{position:absolute;content:"";background-color:#ffffff;background:-webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(30%, rgba(255, 255, 255, 0.6)), color-stop(70%, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0) 100%);width:1px;right:0;top:5px;bottom:5px}.expected-yield>.expected-yield-label{padding:10px 15px;color:#666769;font-size:100%;-ms-flex-positive:1;flex-grow:1;-ms-flex-item-align:center;align-self:center;text-align:center;white-space:normal;overflow:hidden;text-overflow:ellipsis}</style><style>solarweb-current-weather-parameter{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:center;align-items:center;width:18%}solarweb-current-weather-parameter .parameter-icon{width:60%}@media (max-width: 479px), (min-width: 480px) and (max-width: 767px), (min-width: 768px) and (max-width: 991px){solarweb-current-weather-parameter .parameter-icon{max-width:48px}}solarweb-current-weather-parameter .parameter-value{font-size:100%;font-weight:700;color:#666769;text-align:center}solarweb-current-weather-parameter .parameter-unit{font-size:86%;color:#a6a8aa}solarweb-current-weather-parameter.mod-light{-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:center;justify-content:center;-ms-flex-align:baseline;align-items:baseline;width:100%}solarweb-current-weather-parameter.mod-light .parameter-icon{width:11%;line-height:1}solarweb-current-weather-parameter.mod-light .parameter-value{margin:0 5px 0 10px}</style><style>solarweb-forecast-day{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:center;align-items:center;-ms-flex-pack:stretch;justify-content:stretch;text-align:center;-ms-flex-preferred-size:12.5%;flex-basis:12.5%;height:100%;position:relative;min-width:40px}solarweb-forecast-day .day-label{color:#a6a8aa;font-size:100%;line-height:2.2;width:85%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}solarweb-forecast-day .day-icon{width:55%}</style><style>solarweb-candlestick{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;-ms-flex-positive:1;flex-grow:1;font-size:86%;width:100%;margin:10% 0 2% 0}solarweb-candlestick .temp-range{background-color:#e2eff4;border:1px solid #8acfe0;border-radius:10px;width:15%;margin:3% 0}</style><link href="/manifest.json" rel="manifest"/>
+<link href="/Content/images/icon-homescreen.png" rel="apple-touch-icon"/>
+<link href="/Content/images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+<!-- Header Styles -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,300&amp;subset=greek,cyrillic,latin" rel="stylesheet" type="text/css"/>
+<link href="/Content/css?v=3-vexWYq_8kUJ6WFqYoUtQHmukt7svoxLBl0FkoAD5E1" rel="stylesheet"/>
+<style>
+    .campaign-widget {
+      position: absolute;
+      top: 0;
+    }
+
+    #powerWidget { cursor: pointer; }
+  </style>
+<link href="/node_modules/@fronius-se/energy-flow-widgets/dist/EnergyFlow/ComponentDetailsOverlay.css?v=OH_UmddliolHft9H1YpUOotIA2" rel="stylesheet"/>
+<!-- Header Scripts -->
+<script async="" charset="UTF-8" src="https://consent.cookiebot.com/a383852f-610a-4591-b494-33a88515ac4b/cc.js?renew=false&amp;referer=www.solarweb.com&amp;dnt=false&amp;forceshow=false" type="text/javascript"></script><script async="" src="https://consent.cookiebot.com/uc.js?cbid=a383852f-610a-4591-b494-33a88515ac4b" type="text/javascript"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KNHPXZZ"></script><script>
+  window.onerror = function(msg, url, lineNo, columnNo, error) {
+    var string = msg && msg.toString().toLowerCase();
+    var substring = "script error";
+    if (string.indexOf(substring) > -1) {
+      alert('Script Error: See Browser Console for Detail');
+    }
+    else {
+      var message = [
+        'Message: ' + msg,
+        'URL: ' + url,
+        'Line: ' + lineNo,
+        'Column: ' + columnNo,
+        'Error object: ' + JSON.stringify(error)
+      ].join(' - ');
+
+      alert(message);
+    }
+
+    return false;
+  };
+</script> <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                                                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KNHPXZZ');
+</script>
+<script>
+  // Keep in sync with typings_fixes/Fronius.d.ts !
+  var GlobalScriptResources = {
+    antiForgeryToken: "BaZnKJNX1yijkkSDlcKr1GeAXjMsKawkZLgc08SgBEdtRjawpVqJgUVdj_Z-rc5adQ-coln7RhW5P79HaE7MOftUwK3KVt5eeuUF4HGBP32hUItli9D2uBL2hBPY_wZANJDOYQ2",
+    featureToggles: {
+      enableCustomGoogleAnalytics: true
+    },
+    strings: {
+      OK: "OK",
+      Cancel: "Abbrechen",
+      Yes: "Ja",
+      No: "Nein",
+      true: "Ja",
+      false: "Nein",
+      Active: "Aktiv",
+      Warning: "Warnung",
+      Error: "Fehler",
+      Information: "Information",
+      Success: "OK",
+      PleaseWait: "Bitte warten..."
+    },
+    urls: {
+      loadingImageUrl: "/Content/images/spinner-bg-red.gif"
+    },
+    userSettings: {
+      cultureName: "de",
+      dateFormat: "DD.MM.YYYY",
+      timeFormat: "HH:mm",
+      decimalSeparator: ","
+    }
+  };
+</script>
+<script src="/bundles/infrastructure?v=9ktsOtIo0upvJP7-7FiXuOoOJe58RLFJ__wIRPL2vGo1"></script>
+<style id="CookieConsentStateDisplayStyles" type="text/css">.cookieconsent-optin-preferences,.cookieconsent-optin-statistics,.cookieconsent-optin-marketing,.cookieconsent-optin{display:none;}.cookieconsent-optout-preferences,.cookieconsent-optout-statistics,.cookieconsent-optout-marketing,.cookieconsent-optout{display:block;display:initial;}</style><style id="CookiebotDialogStyle" type="text/css">#cookiebanner::-webkit-scrollbar{width:6px;height:6px}#cookiebanner::-webkit-scrollbar-track,#cookiebanner::-webkit-scrollbar-thumb{-webkit-border-radius:10px;border-radius:10px}#cookiebanner::-webkit-scrollbar-thumb{background:#dc3545;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.5);box-shadow:inset 0 0 6px rgba(0,0,0,.5)}#cookiebanner::-webkit-scrollbar-thumb:window-inactive{background:#dc3545}@-webkit-keyframes cookiepop{50%{-webkit-transform:scale(1.06,1.06);transform:scale(1.06,1.06)}}@keyframes cookiepop{50%{-webkit-transform:scale(1.06,1.06);transform:scale(1.06,1.06)}}#cookiebanner button,#cookiebanner .button,#cookiebanner .btn,#cookiebanner [type=submit],#cookiebanner [type=button]{display:inline-block;padding:12px 15px;vertical-align:middle;border-radius:4px;cursor:pointer;border:0;outline:0;-webkit-box-sizing:border-box;box-sizing:border-box;text-decoration:none}#cookiebanner .text-justify button,#cookiebanner.text-justify .button,#cookiebanner.text-justify .btn,#cookiebanner.text-justify [type=submit],#cookiebanner.text-justify [type=button],#cookiebanner.text-center button,#cookiebanner.text-center .button,#cookiebanner.text-center .btn,#cookiebanner.text-center [type=submit],#cookiebanner.text-center [type=button]{margin:5px 3px}#cookiebanner .text-left button,#cookiebanner.text-left .button,#cookiebanner .text-left .btn,#cookiebanner .text-left [type=submit],#cookiebanner .text-left [type=button],#cookiebanner button,#cookiebanner .button,#cookiebanner .btn,#cookiebanner [type=submit],#cookiebanner [type=button]{margin:5px 6px 5px 0}#cookiebanner .text-right button,#cookiebanner .text-right .button,#cookiebanner .text-right .btn,#cookiebanner .text-right [type=submit],#cookiebanner .text-right [type=button]{margin:5px 0 5px 6px}#cookiebanner button,#cookiebanner .button,#cookiebanner .btn,#cookiebanner [type=submit],#cookiebanner [type=button]{font-weight:bold;font-size:14px}#cookiebanner button,#cookiebanner .button,#cookiebanner .btn,#cookiebanner [type=submit],#cookiebanner [type=button]{background-color:#e2001a;color:#fff}#cookiebanner button:hover,#cookiebanner .button:hover,#cookiebanner .btn:hover,#cookiebanner [type=submit]:hover,#cookiebanner [type=button]:hover{-webkit-animation:cookiepop .4s linear;animation:cookiepop .4s linear}#cookiebanner button.small,#cookiebanner .button.small,#cookiebanner .btn.small,#cookiebanner [type=submit].small,#cookiebanner [type=button].small{padding:5px 10px;font-size:12px}#cookiebanner button:disabled,#cookiebanner .button:disabled,#cookiebanner .btn:disabled,#cookiebanner button.disabled,#cookiebanner .button.disabled,#cookiebanner .btn.disabled,#cookiebanner [type=submit]:disabled,#cookiebanner [type=button]:disabled,#cookiebanner [type=submit].disabled,#cookiebanner [type=button].disabled{opacity:.65;cursor:default;-webkit-animation:none;animation:none}#cookiebanner button .icon,#cookiebanner .button .icon,#cookiebanner .btn .icon,#cookiebanner [type=submit] .icon,#cookiebanner [type=button] .icon{font-size:1em}#cookiebanner button.icon,#cookiebanner .button.icon,#cookiebanner .btn.icon,#cookiebanner [type=submit].icon,#cookiebanner [type=button].icon{padding:10px;font-size:20px}#cookiebanner .icon,#cookiebanner .icon *{font-family:"Fronius";text-transform:none !important;font-weight:normal !important}#cookiebanner.myfronius button,#cookiebanner.myfronius .button,#cookiebanner.myfronius .btn,#cookiebanner.myfronius [type=submit],#cookiebanner.myfronius [type=button],#cookiebanner.warranty-fronius button,#cookiebanner.warranty-fronius .button,#cookiebanner.warranty-fronius .btn,#cookiebanner.warranty-fronius [type=submit],#cookiebanner.warranty-fronius [type=button]{padding:12px 30px;border-radius:calc(12px + 1em)}#cookiebanner.myfronius button.small,#cookiebanner.myfronius .button.small,#cookiebanner.myfronius .btn.small,#cookiebanner.myfronius [type=submit].small,#cookiebanner.myfronius [type=button].small,#cookiebanner.warranty-fronius button.small,#cookiebanner.warranty-fronius .button.small,#cookiebanner.warranty-fronius .btn.small,#cookiebanner.warranty-fronius [type=submit].small,#cookiebanner.warranty-fronius [type=button].small{padding:5px 20px;border-radius:calc(5px + 1em)}#cookiebanner.myfronius button.icon,#cookiebanner.myfronius .button.icon,#cookiebanner.myfronius .btn.icon,#cookiebanner.myfronius [type=submit].icon,#cookiebanner.myfronius [type=button].icon,#cookiebanner.warranty-fronius button.icon,#cookiebanner.warranty-fronius .button.icon,#cookiebanner.warranty-fronius .btn.icon,#cookiebanner.warranty-fronius [type=submit].icon,#cookiebanner.warranty-fronius [type=button].icon{padding:10px;border-radius:calc(10px + 1em)}#cookiebanner h1,#cookiebanner h2,#cookiebanner h3,#cookiebanner h4,#cookiebanner h5,#cookiebanner h6{font-weight:bold;text-transform:uppercase;margin-top:1em;margin-bottom:1em}#cookiebanner h1{font-size:36px;line-height:40px}#cookiebanner h2{font-size:30px;line-height:36px}#cookiebanner h3{font-size:18px;line-height:22px}#cookiebanner h4{font-size:15px;line-height:18px}#cookiebanner h5{font-size:13px;line-height:15px}#cookiebanner h6{font-size:9px;line-height:12px}#cookiebanner p,#cookiebanner small,#cookiebanner time,#cookiebanner ul,#cookiebanner ol{margin-top:.5em;margin-bottom:.5em}#cookiebanner .red{background-color:#e2001a;color:#fff}#cookiebanner .blue{background:#8797b4;color:#fff}#cookiebanner .dark,#cookiebanner .darkgrey,#cookiebanner .darkgray{background-color:#4b4b4d;color:#fff}#cookiebanner .grey,#cookiebanner.gray{background-color:#7b7c7e;color:#fff}#cookiebanner .silver,#cookiebanner .lightgrey,#cookiebanner .lightgray{background-color:#eceded;color:#4b4b4d}#cookiebanner .white{background:#fff;color:#7b7c7e}#cookiebanner a{cursor:pointer;font-weight:bold;color:#8797b4;text-decoration:none;-webkit-transition:.5s ease;-o-transition:.5s ease;transition:.5s ease}#cookiebanner a:not(.btn):not(.button):hover{color:#a6a8aa}#cookiebanner img{width:120px}#cookiebanner,#cookiebanner *{padding:0;border:none;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}#cookiebanner{width:100%;height:100%;line-height:100vh;position:fixed;top:0;left:0;z-index:+9000;background:rgba(0,0,0,.7);text-align:center;-ms-overflow-y:scroll;overflow-y:scroll;-ms-overflow-x:hidden;overflow-x:hidden}#cookiebanner .popup{display:inline-block;vertical-align:middle;width:700px;height:auto;max-width:90vw;padding:15px 20px;margin:20px 0;opacity:0;-webkit-border-radius:10px;border-radius:10px;text-align:left;overflow:hidden;color:#4b4b4d;font-size:14px;line-height:normal;-webkit-transform:scale(.5);-ms-transform:scale(.5);transform:scale(.5)}#cookiebanner.active .popup{opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}#cookiebanner .popup,#cookiebanner a,#cookiebanner button,#cookiebanner .button{-webkit-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease}</style></head>
+<body class="" data-offset="51" data-spy="scroll" data-target=".navbar-fixed-top" id="page-top"><div class="solarweb active" dir="ltr" id="cookiebanner" lang="en" name="cookiebanner" ng-non-bindable="" style="display: block;"><div class="popup white"><p><img src="https://www.fronius.com/~/protected-media/images/fronius-logo.png"/></p><h4>Cookies</h4><div><p style="">We use cookies on our website. Some of them are necessary and are required for the website to function properly, while others help us to improve the performance of the website. Cookies are small text files used by websites to make the user experience more efficient. Necessary cookies may be stored on your device if they are absolutely necessary for the operation of this site. We require your permission for all other types of cookies. <a href="javascript: void(0);" id="CybotCookiebotDialogBodyButtonDecline" lang="en" style="font-size:12.8px;" tabindex="1">Only accept technical cookies.</a> By accepting, you give consent to all of our cookies.</p><p style="text-align:right;"><a class="button red" href="javascript: void(0);" id="CybotCookiebotDialogBodyButtonAccept" lang="en" style="" tabindex="0">Accept</a> <a class="button white" href="http://www.fronius.com/en/cookie-policy/cookie-policy-solarweb" style="" target="_blank">Show details</a></p></div></div></div>
+<noscript>
+<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-KNHPXZZ" style="display: none; visibility: hidden" width="0"></iframe>
+</noscript>
+<noscript>
+<div class="noJavaScriptMessage" style="height: 100%; width: 100%; background: #808080; background: rgba(128, 128, 128, 0.5); position: fixed; z-index: 10000;">
+<div class="u-center-content">
+<div class="alert alert-danger">
+<strong>Ihr Browser unterstützt JavaScript nicht!</strong><br/>
+        Um Fronius Solar.web zu benutzen, wird JavaScript benötigt. Aktivieren Sie JavaScript in ihren Browsereinstellungen und laden sie die Seite neu.
+      </div>
+</div>
+</div>
+</noscript>
+<!-- Header, Navigation -->
+<nav class="navbar navbar-fixed-top navbar-inverse js-header js-fixed-header" role="navigation">
+<div class="u-center u-max-page-width padding-left-right no-padding-xs no-padding-sm" id="navigation">
+<a class="js-home" href="/">
+<img class="navbar-brand fronius-logo" src="/Content/images/fronius-logo.svg"/>
+</a>
+<a class="navbar-brand navbar-brand-text js-navbar-brand-text" href="/PvSystems/PvSystem?pvSystemId=673dc46c-2863-4996-a638-a2480124484c">5kWp Simbürger</a>
+<ul class="nav navbar-nav nav-pills pull-right">
+<li class="hidden-xs">
+<a href="/ProductRegistration" title="Produktregistrierung">
+<span class="hidden-sm">Produktregistrierung</span>
+<span class="icon-sw-product-registration mod-lg"></span>
+</a>
+</li>
+<li class="dropdown pull-right" id="userDropdown">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" title="b.simbuerger@aon.at">
+<span class="icon-sw-user-account-standard mod-lg"></span>
+<span class="js-user-icon-message-count badge mod-primary hidden" style="font-size: 10px; margin-left: -20px; margin-bottom: -25px;"></span>
+<span class="dropdown-arrow mod-top-nav hidden-sm hidden-xs"></span>
+</a>
+<ul class="dropdown-menu nav-dropdown-menu" role="menu" style="min-width: 240px">
+<li class="u-border-bottom no-link">
+<a class="no-link" href="#">
+<span class="icon-sw icon-sw-user u-font-icons-very-small"></span>
+<span class="dropdown-user-container u-ellipsed-text">
+<span>
+                  b.simbuerger@aon.at
+                </span>
+</span>
+</a>
+</li>
+<li class="u-border-bottom dropdown-item-primary">
+<a href="/Home/PremiumInfo">
+<span class="icon-sw icon-sw-premium premium-info-icon u-font-icons-very-small u-text-red u-text-white mod-user-dropdown" title="Premium"></span>
+<span class="u-text-white" style="white-space: normal; display: table-cell;">Jetzt Solar.web Premium Mitglied werden</span>
+</a>
+</li>
+<li class="u-border-bottom visible-xs-block">
+<a href="/ProductRegistration" title="Produktregistrierung">
+<span class="icon-sw icon-sw-register-product u-font-icons-very-small"></span>
+<span>Produktregistrierung</span>
+</a>
+</li>
+<li class="u-border-bottom">
+<a href="/PvSystems/AddPvSystem">
+<span class="icon-sw icon-sw-add-btn-03 u-font-icons-very-small"></span>
+<span>PV-Anlage hinzufügen</span>
+</a>
+</li>
+<li class="u-border-bottom" id="js-user-menu-message-center">
+<a href="/MessageCenter/SystemMessages">
+<span class="icon-sw icon-sw-message-center u-font-icons-very-small"></span>
+<span class="js-second-level-nav-element-text">Nachrichten Center</span>
+<span class="js-user-icon-message-count badge mod-primary hidden" style="font-size: 10px; margin-left: 10px;"></span>
+</a>
+</li>
+<li class="u-border-bottom">
+<a href="/UserSettings/UserProfile" id="userSettings">
+<span class="icon-sw icon-sw-settings u-font-icons-very-small"></span>
+<span>Benutzereinstellungen</span>
+</a>
+</li>
+<li>
+<a href="/Account/LogOff" id="LogOut">
+<span class="icon-sw icon-sw-logout u-font-icons-very-small"></span>
+<span>Abmelden</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<div class="notification-bar js-notification-bar">
+<div class="formular-bar js-formular-bar js-fixed-header">
+<div class="formular-bar-content">
+<div class="second-level-nav no-padding-top mod-notification">
+<div class="u-max-page-width u-center second-level-nav-container" style="overflow-y: visible;">
+<div class="col-xs-12">
+<ul class="nav nav-pills mod-second-level mod-centered formular-bar-save">
+<li class="second-level-nav-element second-level-nav-element text-only">
+<a class="mod-notification js-formular-reset" href="#">
+<span class="second-level-nav-element-text">Zurücksetzen</span>
+</a>
+</li>
+<li class="second-level-nav-element second-level-nav-element text-only">
+<a class="mod-notification js-formular-submit" href="#">
+<span class="second-level-nav-element-text">Speichern</span>
+</a>
+</li>
+</ul>
+<ul class="nav nav-pills mod-second-level formular-bar-loading">
+<li class="second-level-nav-element second-level-nav-element text-only">
+<span class="x-spinner">
+<img src="/Content/images/spinner-bg-red.gif" style="width: 32px;"/>
+</span>
+<a class="mod-notification js-formular-cancel-submit" href="#">
+<span class="second-level-nav-element-text">Abbrechen</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Subnavigation-->
+<div class="second-level-nav js-second-level-nav js-fixed-header">
+<div class="u-max-page-width u-center second-level-nav-container js-second-level-nav-container" style="overflow-y: visible;">
+<ul class="nav nav-pills mod-second-level js-tabs">
+<li class="js-menu-item second-level-nav-element text-only selected"><a href="/PvSystems/PvSystem?pvSystemId=673dc46c-2863-4996-a638-a2480124484c"><span class="second-level-nav-element-text js-second-level-nav-element-text">Übersicht</span></a></li>
+<li class="js-menu-item second-level-nav-element text-only"><a href="/PvSystems/Realtime?pvSystemId=673dc46c-2863-4996-a638-a2480124484c"><span class="second-level-nav-element-text js-second-level-nav-element-text">Analyse</span></a></li>
+<li class="js-menu-item second-level-nav-element text-only"><a href="/Chart/Chart?pvSystemId=673dc46c-2863-4996-a638-a2480124484c"><span class="second-level-nav-element-text js-second-level-nav-element-text">Energiebilanz</span></a></li>
+<li class="dropdown second-level-nav-element text-only js-last-tab hidden"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"><span class="second-level-nav-element-text dropdown-arrow-menu js-last-tab-text">mehr</span></a><ul class="dropdown-menu dropdown-menu-right nav-dropdown-menu js-dropdown-tabs" role="menu"></ul></li>
+<li class="hidden-xs second-level-nav-element pull-right">
+<button class="btn btn-primary" onclick="window.location = '/Home/PremiumInfo';" type="button">Premium</button>
+</li>
+</ul>
+</div>
+</div>
+<!-- Content -->
+<div class="layout-content js-content">
+<div class="container-fluid u-center u-max-page-width no-padding-xs">
+<div class="row margin-content">
+<div class="margin-system settings">
+<div class="col-xs-12 no-padding js-inline-notification-container hidden"></div>
+<div class="overlay-container" style="position: relative;">
+<div class="col-sm-6 col-lg-4 pvsystem-widget-container mod-aspect-1-1" id="powerWidget">
+<div class="widget aspect-1-1-content mod-pvsystem-widget mod-pvsystem-widget-square js-live-data-widget">
+<div class="savings-widget-title">
+        Aktuelle Leistung
+      </div>
+<div class="savings-widget-body js-live-data-widget-content">
+<div class="loading-progress mod-widget js-live-loading hidden">
+<div class="loading-progress-item1"></div>
+<div class="loading-progress-item2"></div>
+<div class="loading-progress-item3"></div>
+<div class="loading-progress-item4"></div>
+</div>
+<div style="width: 100%; height: 100%; position: relative; min-width: 200px;"><svg height="100%" viewbox="0 0 400 400" width="100%"><g height="400" width="400"><g id="pvContainer"><circle cx="200" cy="128" fill="#ffffff" fill-opacity="1" id="pvOuterCircle" r="85.33333333333334" stroke="#FCE798" stroke-width="1"></circle><circle cx="200" cy="128" id="pvCircle" r="57.82352941176471" stroke="#FCE798" stroke-width="1" style="fill: rgb(255, 255, 255);"></circle><image height="67.22689075630252" id="pvImage" width="67.22689075630252" x="166.38655462184875" xlink:href="/node_modules/@fronius-se/energy-flow-widgets/dist/images/new/inverter.svg?v=1615387811199" y="94.38655462184875"/><image display="none" height="58.82352941176471" id="pvInfoImage" width="58.82352941176471" x="192.64705882352942" xlink:href="/node_modules/@fronius-se/energy-flow-widgets/dist/images/new/info_filled.svg?v=1615387811199" y="123.52941176470587"/><g id="pvGroup" transform="translate(200,128) rotate(0)"><path d="M5.102694996447306e-15,-83.33333333333334A83.33333333333334,83.33333333333334,0,1,1,-5.102694996447306e-15,83.33333333333334A83.33333333333334,83.33333333333334,0,1,1,5.102694996447306e-15,-83.33333333333334M-1.0989404071172278e-14,-59.82352941176471A59.82352941176471,59.82352941176471,0,1,0,1.0989404071172278e-14,59.82352941176471A59.82352941176471,59.82352941176471,0,1,0,-1.0989404071172278e-14,-59.82352941176471Z" id="pvIndicatorPath" style="fill: rgb(252, 231, 152);"></path><path d="M5.102694996447306e-15,-83.33333333333334A83.33333333333334,83.33333333333334,0,1,1,-23.985713824210485,79.80682913628084L-17.218920677097927,57.291914281127724A59.82352941176471,59.82352941176471,0,1,0,3.66313469039076e-15,-59.82352941176471Z" id="pvIndicator" style="fill: rgb(247, 192, 2);" visibility="visible"></path><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="0" x2="0" y1="-59.82352941176471" y2="-83.33333333333334"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="29.91176470588235" x2="41.666666666666664" y1="-51.80869621463378" y2="-72.16878364870324"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="51.80869621463377" x2="72.16878364870323" y1="-29.911764705882362" y2="-41.66666666666668"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="59.82352941176471" x2="83.33333333333334" y1="-3.66313469039076e-15" y2="-5.102694996447306e-15"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="51.80869621463378" x2="72.16878364870324" y1="29.91176470588234" y2="41.66666666666665"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="42.301623321571704" x2="58.92556509887897" y1="42.3016233215717" y2="58.92556509887896"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="29.91176470588235" x2="41.666666666666664" y1="51.80869621463378" y2="72.16878364870324"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="15.483468757015522" x2="21.56825375854342" y1="57.785092078587205" y2="80.49381885742235"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="7.32626938078152e-15" x2="1.0205389992894611e-14" y1="59.82352941176471" y2="83.33333333333334"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-15.48346875701551" x2="-21.568253758543403" y1="57.785092078587205" y2="80.49381885742237"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-29.911764705882362" x2="-41.66666666666668" y1="51.80869621463377" y2="72.16878364870323"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-42.3016233215717" x2="-58.92556509887896" y1="42.30162332157171" y2="58.925565098878984"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-51.80869621463376" x2="-72.16878364870321" y1="29.91176470588238" y2="41.66666666666671"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-56.21572913760406" x2="-78.30771839882571" y1="20.460852103659114" y2="28.501678610472382"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-58.91467557725974" x2="-82.06731275101734" y1="10.388246863956951" y2="14.470681472244197"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-59.82352941176471" x2="-83.33333333333334" y1="1.0989404071172278e-14" y2="1.5308084989341916e-14"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-58.91467557725975" x2="-82.06731275101735" y1="-10.38824686395693" y2="-14.470681472244166"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-56.21572913760405" x2="-78.3077183988257" y1="-20.46085210365914" y2="-28.501678610472418"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-51.80869621463377" x2="-72.16878364870323" y1="-29.911764705882362" y2="-41.66666666666668"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-45.82748227364711" x2="-63.83703692658152" y1="-38.453823473600615" y2="-53.565634140544944"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-38.453823473600636" x2="-53.56563414054497" y1="-45.827482273647085" y2="-63.83703692658149"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-29.91176470588238" x2="-41.66666666666671" y1="-51.808696214633756" y2="-72.16878364870321"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-20.460852103659118" x2="-28.501678610472386" y1="-56.21572913760406" y2="-78.30771839882571"></line><line style="stroke: rgb(255, 255, 255); stroke-width: 1.3;" x1="-10.388246863956955" x2="-14.4706814722442" y1="-58.91467557725974" y2="-82.06731275101734"></line></g></g></g></svg><div class="js-status-bar-bg" style="visibility: visible; opacity: 1; width: 100%; height: 35%; position: absolute; bottom: 0px; display: table; background-color: rgb(255, 255, 255); border-top: 2px solid rgb(238, 238, 238);"><div class="js-status-bar-text" style="font-size: 30px; font-family: sans-serif; padding: 13px; display: table-cell; text-align: center; vertical-align: middle; color: rgb(75, 77, 77);"><span style="white-space: nowrap; font-weight: 500;">1,9<span style="font-size: smaller"> kW</span></span><br/><span style="font-size: 60%">Auslastung <span style="white-space: nowrap">38 %</span></span></div></div></div></div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 pvsystem-widget-container mod-aspect-1-1">
+<div class="widget aspect-1-1-content mod-pvsystem-widget mod-cursor-pointer js-energyflowchart-container">
+<div class="savings-widget-title mod-info">
+      Energiebilanz Heute
+      <span class="c-context-help-trigger js-context-help-trigger js-page-guide-element page-guide-element icon-sw-info-100 mod-widget-header js-energy-balance-help-text" data-content="Leistungsverlauf der Anlage"></span>
+</div>
+<div class="loading-progress mod-widget js-loading hidden">
+<div class="loading-progress-item1"></div>
+<div class="loading-progress-item2"></div>
+<div class="loading-progress-item3"></div>
+<div class="loading-progress-item4"></div>
+</div>
+<div class="savings-widget-body js-widget-container">
+<div class="live-plot-header js-live-plot-header js-live-plot-header-with-meter hidden">
+<div class="icon-to-grid icon-sw-upward" title="Einspeisung"></div>
+<div class="text-to-grid js-energy-to-grid" title="Einspeisung"></div>
+<div class="text-from-grid js-energy-from-grid" title="Bezug"></div>
+<div class="icon-from-grid icon-sw-downward" title="Bezug"></div>
+</div>
+<div class="live-plot-header js-live-plot-header js-live-plot-header-without-meter">
+<div class="text-to-grid js-production" title="Produktion">0,09 kWh</div>
+</div>
+<div class="live-plot-chart js-live-plot-chart" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-7fek3cj-0" style="position: relative; overflow: visible; width: 363px; height: 283px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: Roboto, sans-serif;"><svg class="highcharts-root" height="283" style="font-family:Roboto, sans-serif;font-size:12px;overflow:visible;" version="1.1" viewbox="0 0 363 283" width="363" xmlns="http://www.w3.org/2000/svg"><desc>Created with Highcharts 5.0.14</desc><defs><clippath id="highcharts-7fek3cj-1"><rect fill="none" height="253" width="323" x="0" y="0"></rect></clippath></defs><rect class="highcharts-background" fill="#ffffff" height="283" rx="0" ry="0" width="363" x="0" y="0"></rect><rect class="highcharts-plot-background" fill="none" height="253" width="323" x="20" y="10"></rect><g class="highcharts-pane-group"></g><g class="highcharts-grid highcharts-xaxis-grid"><path class="highcharts-grid-line" d="M 19.5 10 L 19.5 263" fill="none" opacity="1" stroke="#ECEDED" stroke-width="1"></path><path class="highcharts-grid-line" d="M 100.5 10 L 100.5 263" fill="none" opacity="1" stroke="#ECEDED" stroke-width="1"></path><path class="highcharts-grid-line" d="M 181.5 10 L 181.5 263" fill="none" opacity="1" stroke="#ECEDED" stroke-width="1"></path><path class="highcharts-grid-line" d="M 261.5 10 L 261.5 263" fill="none" opacity="1" stroke="#ECEDED" stroke-width="1"></path><path class="highcharts-grid-line" d="M 343.5 10 L 343.5 263" fill="none" opacity="1" stroke="#ECEDED" stroke-width="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid"><path class="highcharts-grid-line" d="M 20 263.5 L 343 263.5" fill="none" opacity="1" stroke="#ECEDED" stroke-width="1"></path><path class="highcharts-grid-line" d="M 20 200.5 L 343 200.5" fill="none" opacity="1" stroke="#ECEDED" stroke-width="1"></path><path class="highcharts-grid-line" d="M 20 137.5 L 343 137.5" fill="none" opacity="1" stroke="#ECEDED" stroke-width="1"></path><path class="highcharts-grid-line" d="M 20 73.5 L 343 73.5" fill="none" opacity="1" stroke="#ECEDED" stroke-width="1"></path><path class="highcharts-grid-line" d="M 20 10.5 L 343 10.5" fill="none" opacity="1" stroke="#ECEDED" stroke-width="1"></path></g><rect class="highcharts-plot-border" fill="none" height="253" width="323" x="20" y="10"></rect><g class="highcharts-axis highcharts-xaxis"><path class="highcharts-axis-line" d="M 20 263 L 343 263" fill="none"></path></g><g class="highcharts-axis highcharts-yaxis"><path class="highcharts-axis-line" d="M 343 10 L 343 263" fill="none"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-areaspline-series highcharts-color-undefined" clip-path="url(https://www.solarweb.com/PvSystems/PvSystem?pvSystemId=673dc46c-2863-4996-a638-a2480124484c#highcharts-7fek3cj-1)" transform="translate(20,10) scale(1 1)"><path class="highcharts-area" d="M 0 253 C 0 253 0.6729166666666802 253 1.1215277777778 253 C 1.5701388888889203 253 1.7944444444444803 253 2.2430555555556 253 C 2.69166666666668 253 2.91597222222222 253 3.3645833333333 253 C 3.81319444444442 253 4.03749999999998 253 4.4861111111111 253 C 4.93472222222222 253 5.15902777777778 253 5.6076388888889 253 C 6.05625000000002 253 6.28055555555558 253 6.7291666666667 253 C 7.17777777777778 253 7.40208333333332 253 7.8506944444444 253 C 8.29930555555552 253 8.52361111111108 253 8.9722222222222 253 C 9.42083333333332 253 9.64513888888888 253 10.09375 253 C 10.5423611111112 253 10.7666666666668 253 11.215277777778 253 C 11.6638888888892 253 11.888194444444801 253 12.336805555556 253 C 12.7854166666668 253 13.0097222222222 253 13.458333333333 253 C 13.906944444444202 253 14.1312499999998 253 14.579861111111 253 C 15.0284722222222 253 15.2527777777778 253 15.701388888889 253 C 16.150000000000198 253 16.3743055555558 253 16.822916666667 253 C 17.2715277777778 253 17.4958333333332 253 17.944444444444 253 C 18.3930555555552 253 18.617361111110803 253 19.065972222222 253 C 19.5145833333332 253 19.738888888888802 253 20.1875 253 C 20.636111111111198 253 20.8604166666668 253 21.309027777778 253 C 21.757638888889197 253 21.9819444444448 253 22.430555555556 253 C 22.8791666666668 253 23.1034722222222 253 23.552083333333 253 C 24.0006944444442 253 24.224999999999802 253 24.673611111111 253 C 25.1222222222222 253 25.3465277777778 253 25.795138888889 253 C 26.243750000000198 253 26.4680555555558 253 26.916666666667 253 C 27.3652777777778 253 27.589583333333202 253 28.038194444444 253 C 28.4868055555552 253 28.711111111110803 253 29.159722222222 253 C 29.6083333333332 253 29.832638888888802 253 30.28125 253 C 30.729861111111198 253 30.9541666666668 253 31.402777777778 253 C 31.851388888889197 253 32.0756944444448 253 32.524305555556 253 C 32.9729166666668 253 33.1972222222222 253 33.645833333333 253 C 34.0944444444442 253 34.3187499999998 253 34.767361111111 253 C 35.2159722222222 253 35.4402777777778 253 35.888888888889 253 C 36.3375000000002 253 36.5618055555558 253 37.010416666667 253 C 37.4590277777778 253 37.6833333333332 253 38.131944444444 253 C 38.5805555555552 253 38.8048611111108 253 39.253472222222 253 C 39.7020833333332 253 39.9263888888888 253 40.375 253 C 40.8236111111112 253 41.0479166666668 253 41.496527777778 253 C 41.9451388888892 253 42.1694444444448 253 42.618055555556 253 C 43.0666666666668 253 43.2909722222222 253 43.739583333333 253 C 44.1881944444442 253 44.4124999999998 253 44.861111111111 253 C 45.3097222222222 253 45.5340277777778 253 45.982638888889 253 C 46.4312500000002 253 46.6555555555558 253 47.104166666667 253 C 47.5527777777778 253 47.7770833333332 253 48.225694444444 253 C 48.6743055555552 253 48.8986111111108 253 49.347222222222 253 C 49.7958333333332 253 50.0201388888888 253 50.46875 253 C 50.9173611111112 253 51.1416666666668 253 51.590277777778 253 C 52.0388888888892 253 52.2631944444448 253 52.711805555556 253 C 53.1604166666668 253 53.384722222222194 253 53.833333333333 253 C 54.28194444444421 253 54.506249999999795 253 54.954861111111 253 C 55.40347222222219 253 55.62777777777781 253 56.076388888889 253 C 56.525000000000205 253 56.74930555555579 253 57.197916666667 253 C 57.646527777777806 253 57.8708333333332 253 58.319444444444 253 C 58.7680555555552 253 58.9923611111108 253 59.440972222222 253 C 59.8895833333332 253 60.1138888888888 253 60.5625 253 C 61.0111111111112 253 61.2354166666668 253 61.684027777778 253 C 62.1326388888892 253 62.3569444444448 253 62.805555555556 253 C 63.2541666666668 253 63.478472222222194 253 63.927083333333 253 C 64.3756944444442 253 64.5999999999998 253 65.048611111111 253 C 65.49722222222219 253 65.72152777777781 253 66.170138888889 253 C 66.6187500000002 253 66.8430555555558 253 67.291666666667 253 C 67.7402777777778 253 67.9645833333332 253 68.413194444444 253 C 68.86180555555521 253 69.0861111111108 253 69.534722222222 253 C 69.9833333333332 253 70.2076388888888 253 70.65625 253 C 71.1048611111112 253 71.3291666666668 253 71.777777777778 253 C 72.2263888888892 253 72.45069444444479 253 72.899305555556 253 C 73.3479166666668 253 73.5722222222222 253 74.020833333333 253 C 74.4694444444442 253 74.6937499999998 253 75.142361111111 253 C 75.59097222222219 253 75.81527777777781 253 76.263888888889 253 C 76.7125000000002 253 76.9368055555558 253 77.385416666667 253 C 77.8340277777778 253 78.0583333333332 253 78.506944444444 253 C 78.95555555555521 253 79.1798611111108 253 79.628472222222 253 C 80.0770833333332 253 80.3013888888888 253 80.75 253 C 81.1986111111112 253 81.4229166666668 253 81.871527777778 253 C 82.3201388888892 253 82.54444444444479 253 82.993055555556 253 C 83.4416666666668 253 83.6659722222222 253 84.114583333333 253 C 84.5631944444442 253 84.7874999999998 253 85.236111111111 253 C 85.68472222222219 253 85.9090277777778 253 86.357638888889 253 C 86.80625000000019 253 87.03055555555581 253 87.479166666667 253 C 87.9277777777778 253 88.1520833333332 253 88.600694444444 253 C 89.04930555555521 253 89.2736111111108 253 89.722222222222 253 C 90.1708333333332 253 90.3951388888888 253 90.84375 253 C 91.2923611111112 253 91.5166666666668 253 91.965277777778 253 C 92.4138888888892 253 92.63819444444479 253 93.086805555556 253 C 93.5354166666668 253 93.7597222222222 253 94.208333333333 253 C 94.65694444444419 253 94.88124999999981 253 95.329861111111 253 C 95.7784722222222 253 96.0027777777778 253 96.451388888889 253 C 96.90000000000019 253 97.12430555555581 253 97.572916666667 253 C 98.0215277777778 253 98.2458333333332 253 98.694444444444 253 C 99.14305555555521 253 99.3673611111108 253 99.815972222222 253 C 100.2645833333332 253 100.4888888888888 253 100.9375 253 C 101.386111111112 253 101.610416666668 253 102.05902777778 253 C 102.507638888892 253 102.731944444448 253 103.18055555556 253 C 103.62916666666801 253 103.853472222222 253 104.30208333333 253 C 104.750694444442 253 104.974999999998 253 105.42361111111 253 C 105.87222222222199 253 106.09652777777801 253 106.54513888889 253 C 106.993750000002 253 107.218055555558 252.45352000000162 107.66666666667 252.0892 C 108.115277777778 251.72488000000163 108.33958333333199 251.1784 108.78819444444 251.1784 C 109.236805555552 251.1784 109.461111111108 253 109.90972222222 253 C 110.35833333333198 253 110.582638888888 241.52392 111.03125 231.748 C 111.479861111112 221.97208 111.70416666666802 211.5282399999999 112.15277777778 204.12040000000002 C 112.601388888892 196.7125599999999 112.825694444448 198.89848000001865 113.27430555556 194.7088 C 113.72291666666801 190.51912000001863 113.947222222222 187.36167999998136 114.39583333333 183.172 C 114.844444444442 178.98231999998134 115.068749999998 177.88936000000007 115.51736111111 173.7604 C 115.96597222222199 169.63144000000008 116.19027777777801 166.41327999999993 116.63888888889 162.5272 C 117.087500000002 158.64111999999994 117.311805555558 155.24080000000004 117.76041666667 154.33 C 118.209027777778 153.4192 118.43333333333199 154.33 118.88194444444 153.4192 C 119.330555555552 152.50839999999997 119.554861111108 146.8614400000001 120.00347222222 142.18600000000004 C 120.45208333333198 137.5105600000001 120.676388888888 132.77439999999999 121.125 130.042 C 121.573611111112 127.30960000000002 121.79791666666802 129.37408 122.24652777778 127.30960000000002 C 122.695138888892 125.24512 122.919444444448 121.84480000000947 123.36805555556 119.71960000000001 C 123.81666666666801 117.59440000000949 124.040972222222 119.71960000000001 124.48958333333 116.68360000000001 C 124.938194444442 113.64760000000001 125.162499999998 103.93240000000003 125.61111111111 100.28920000000002 C 126.05972222222199 96.64600000000002 126.28402777777801 100.28920000000002 126.73263888889 96.64600000000002 C 127.181250000002 93.00280000000001 127.405555555558 81.46600000000001 127.85416666667 79.94800000000001 C 128.302777777778 78.43 128.52708333333197 79.94800000000001 128.97569444444 78.43 C 129.424305555552 76.912 129.64861111110798 75.21184000000014 130.09722222222 71.75080000000003 C 130.545833333332 68.28976000000013 130.770138888888 64.82872 131.21875 61.12479999999999 C 131.667361111112 57.42088 131.891666666668 56.20647999999993 132.34027777778 53.23120000000003 C 132.78888888889202 50.255919999999946 133.013194444448 48.55576000001027 133.46180555556 46.24840000000003 C 133.91041666666803 43.94104000001026 134.58333333333 41.69440000000003 134.58333333333 41.69440000000003 L 134.58333333333 253 C 134.58333333333 253 133.91041666666803 253 133.46180555556 253 C 133.013194444448 253 132.78888888889202 253 132.34027777778 253 C 131.891666666668 253 131.667361111112 253 131.21875 253 C 130.770138888888 253 130.545833333332 253 130.09722222222 253 C 129.64861111110798 253 129.424305555552 253 128.97569444444 253 C 128.52708333333197 253 128.302777777778 253 127.85416666667 253 C 127.405555555558 253 127.181250000002 253 126.73263888889 253 C 126.28402777777801 253 126.05972222222199 253 125.61111111111 253 C 125.162499999998 253 124.938194444442 253 124.48958333333 253 C 124.040972222222 253 123.81666666666801 253 123.36805555556 253 C 122.919444444448 253 122.695138888892 253 122.24652777778 253 C 121.79791666666802 253 121.573611111112 253 121.125 253 C 120.676388888888 253 120.45208333333198 253 120.00347222222 253 C 119.554861111108 253 119.330555555552 253 118.88194444444 253 C 118.43333333333199 253 118.209027777778 253 117.76041666667 253 C 117.311805555558 253 117.087500000002 253 116.63888888889 253 C 116.19027777777801 253 115.96597222222199 253 115.51736111111 253 C 115.068749999998 253 114.844444444442 253 114.39583333333 253 C 113.947222222222 253 113.72291666666801 253 113.27430555556 253 C 112.825694444448 253 112.601388888892 253 112.15277777778 253 C 111.70416666666802 253 111.479861111112 253 111.03125 253 C 110.582638888888 253 110.35833333333198 253 109.90972222222 253 C 109.461111111108 253 109.236805555552 253 108.78819444444 253 C 108.33958333333199 253 108.115277777778 253 107.66666666667 253 C 107.218055555558 253 106.993750000002 253 106.54513888889 253 C 106.09652777777801 253 105.87222222222199 253 105.42361111111 253 C 104.974999999998 253 104.750694444442 253 104.30208333333 253 C 103.853472222222 253 103.62916666666801 253 103.18055555556 253 C 102.731944444448 253 102.507638888892 253 102.05902777778 253 C 101.610416666668 253 101.386111111112 253 100.9375 253 C 100.4888888888888 253 100.2645833333332 253 99.815972222222 253 C 99.3673611111108 253 99.14305555555521 253 98.694444444444 253 C 98.2458333333332 253 98.0215277777778 253 97.572916666667 253 C 97.12430555555581 253 96.90000000000019 253 96.451388888889 253 C 96.0027777777778 253 95.7784722222222 253 95.329861111111 253 C 94.88124999999981 253 94.65694444444419 253 94.208333333333 253 C 93.7597222222222 253 93.5354166666668 253 93.086805555556 253 C 92.63819444444479 253 92.4138888888892 253 91.965277777778 253 C 91.5166666666668 253 91.2923611111112 253 90.84375 253 C 90.3951388888888 253 90.1708333333332 253 89.722222222222 253 C 89.2736111111108 253 89.04930555555521 253 88.600694444444 253 C 88.1520833333332 253 87.9277777777778 253 87.479166666667 253 C 87.03055555555581 253 86.80625000000019 253 86.357638888889 253 C 85.9090277777778 253 85.68472222222219 253 85.236111111111 253 C 84.7874999999998 253 84.5631944444442 253 84.114583333333 253 C 83.6659722222222 253 83.4416666666668 253 82.993055555556 253 C 82.54444444444479 253 82.3201388888892 253 81.871527777778 253 C 81.4229166666668 253 81.1986111111112 253 80.75 253 C 80.3013888888888 253 80.0770833333332 253 79.628472222222 253 C 79.1798611111108 253 78.95555555555521 253 78.506944444444 253 C 78.0583333333332 253 77.8340277777778 253 77.385416666667 253 C 76.9368055555558 253 76.7125000000002 253 76.263888888889 253 C 75.81527777777781 253 75.59097222222219 253 75.142361111111 253 C 74.6937499999998 253 74.4694444444442 253 74.020833333333 253 C 73.5722222222222 253 73.3479166666668 253 72.899305555556 253 C 72.45069444444479 253 72.2263888888892 253 71.777777777778 253 C 71.3291666666668 253 71.1048611111112 253 70.65625 253 C 70.2076388888888 253 69.9833333333332 253 69.534722222222 253 C 69.0861111111108 253 68.86180555555521 253 68.413194444444 253 C 67.9645833333332 253 67.7402777777778 253 67.291666666667 253 C 66.8430555555558 253 66.6187500000002 253 66.170138888889 253 C 65.72152777777781 253 65.49722222222219 253 65.048611111111 253 C 64.5999999999998 253 64.3756944444442 253 63.927083333333 253 C 63.478472222222194 253 63.2541666666668 253 62.805555555556 253 C 62.3569444444448 253 62.1326388888892 253 61.684027777778 253 C 61.2354166666668 253 61.0111111111112 253 60.5625 253 C 60.1138888888888 253 59.8895833333332 253 59.440972222222 253 C 58.9923611111108 253 58.7680555555552 253 58.319444444444 253 C 57.8708333333332 253 57.646527777777806 253 57.197916666667 253 C 56.74930555555579 253 56.525000000000205 253 56.076388888889 253 C 55.62777777777781 253 55.40347222222219 253 54.954861111111 253 C 54.506249999999795 253 54.28194444444421 253 53.833333333333 253 C 53.384722222222194 253 53.1604166666668 253 52.711805555556 253 C 52.2631944444448 253 52.0388888888892 253 51.590277777778 253 C 51.1416666666668 253 50.9173611111112 253 50.46875 253 C 50.0201388888888 253 49.7958333333332 253 49.347222222222 253 C 48.8986111111108 253 48.6743055555552 253 48.225694444444 253 C 47.7770833333332 253 47.5527777777778 253 47.104166666667 253 C 46.6555555555558 253 46.4312500000002 253 45.982638888889 253 C 45.5340277777778 253 45.3097222222222 253 44.861111111111 253 C 44.4124999999998 253 44.1881944444442 253 43.739583333333 253 C 43.2909722222222 253 43.0666666666668 253 42.618055555556 253 C 42.1694444444448 253 41.9451388888892 253 41.496527777778 253 C 41.0479166666668 253 40.8236111111112 253 40.375 253 C 39.9263888888888 253 39.7020833333332 253 39.253472222222 253 C 38.8048611111108 253 38.5805555555552 253 38.131944444444 253 C 37.6833333333332 253 37.4590277777778 253 37.010416666667 253 C 36.5618055555558 253 36.3375000000002 253 35.888888888889 253 C 35.4402777777778 253 35.2159722222222 253 34.767361111111 253 C 34.3187499999998 253 34.0944444444442 253 33.645833333333 253 C 33.1972222222222 253 32.9729166666668 253 32.524305555556 253 C 32.0756944444448 253 31.851388888889197 253 31.402777777778 253 C 30.9541666666668 253 30.729861111111198 253 30.28125 253 C 29.832638888888802 253 29.6083333333332 253 29.159722222222 253 C 28.711111111110803 253 28.4868055555552 253 28.038194444444 253 C 27.589583333333202 253 27.3652777777778 253 26.916666666667 253 C 26.4680555555558 253 26.243750000000198 253 25.795138888889 253 C 25.3465277777778 253 25.1222222222222 253 24.673611111111 253 C 24.224999999999802 253 24.0006944444442 253 23.552083333333 253 C 23.1034722222222 253 22.8791666666668 253 22.430555555556 253 C 21.9819444444448 253 21.757638888889197 253 21.309027777778 253 C 20.8604166666668 253 20.636111111111198 253 20.1875 253 C 19.738888888888802 253 19.5145833333332 253 19.065972222222 253 C 18.617361111110803 253 18.3930555555552 253 17.944444444444 253 C 17.4958333333332 253 17.2715277777778 253 16.822916666667 253 C 16.3743055555558 253 16.150000000000198 253 15.701388888889 253 C 15.2527777777778 253 15.0284722222222 253 14.579861111111 253 C 14.1312499999998 253 13.906944444444202 253 13.458333333333 253 C 13.0097222222222 253 12.7854166666668 253 12.336805555556 253 C 11.888194444444801 253 11.6638888888892 253 11.215277777778 253 C 10.7666666666668 253 10.5423611111112 253 10.09375 253 C 9.64513888888888 253 9.42083333333332 253 8.9722222222222 253 C 8.52361111111108 253 8.29930555555552 253 7.8506944444444 253 C 7.40208333333332 253 7.17777777777778 253 6.7291666666667 253 C 6.28055555555558 253 6.05625000000002 253 5.6076388888889 253 C 5.15902777777778 253 4.93472222222222 253 4.4861111111111 253 C 4.03749999999998 253 3.81319444444442 253 3.3645833333333 253 C 2.91597222222222 253 2.69166666666668 253 2.2430555555556 253 C 1.7944444444444803 253 1.5701388888889203 253 1.1215277777778 253 C 0.6729166666666802 253 0 253 0 253" fill="rgb(247,192,2)"></path><path class="highcharts-graph" d="M 0 253 C 0 253 0.6729166666666802 253 1.1215277777778 253 C 1.5701388888889203 253 1.7944444444444803 253 2.2430555555556 253 C 2.69166666666668 253 2.91597222222222 253 3.3645833333333 253 C 3.81319444444442 253 4.03749999999998 253 4.4861111111111 253 C 4.93472222222222 253 5.15902777777778 253 5.6076388888889 253 C 6.05625000000002 253 6.28055555555558 253 6.7291666666667 253 C 7.17777777777778 253 7.40208333333332 253 7.8506944444444 253 C 8.29930555555552 253 8.52361111111108 253 8.9722222222222 253 C 9.42083333333332 253 9.64513888888888 253 10.09375 253 C 10.5423611111112 253 10.7666666666668 253 11.215277777778 253 C 11.6638888888892 253 11.888194444444801 253 12.336805555556 253 C 12.7854166666668 253 13.0097222222222 253 13.458333333333 253 C 13.906944444444202 253 14.1312499999998 253 14.579861111111 253 C 15.0284722222222 253 15.2527777777778 253 15.701388888889 253 C 16.150000000000198 253 16.3743055555558 253 16.822916666667 253 C 17.2715277777778 253 17.4958333333332 253 17.944444444444 253 C 18.3930555555552 253 18.617361111110803 253 19.065972222222 253 C 19.5145833333332 253 19.738888888888802 253 20.1875 253 C 20.636111111111198 253 20.8604166666668 253 21.309027777778 253 C 21.757638888889197 253 21.9819444444448 253 22.430555555556 253 C 22.8791666666668 253 23.1034722222222 253 23.552083333333 253 C 24.0006944444442 253 24.224999999999802 253 24.673611111111 253 C 25.1222222222222 253 25.3465277777778 253 25.795138888889 253 C 26.243750000000198 253 26.4680555555558 253 26.916666666667 253 C 27.3652777777778 253 27.589583333333202 253 28.038194444444 253 C 28.4868055555552 253 28.711111111110803 253 29.159722222222 253 C 29.6083333333332 253 29.832638888888802 253 30.28125 253 C 30.729861111111198 253 30.9541666666668 253 31.402777777778 253 C 31.851388888889197 253 32.0756944444448 253 32.524305555556 253 C 32.9729166666668 253 33.1972222222222 253 33.645833333333 253 C 34.0944444444442 253 34.3187499999998 253 34.767361111111 253 C 35.2159722222222 253 35.4402777777778 253 35.888888888889 253 C 36.3375000000002 253 36.5618055555558 253 37.010416666667 253 C 37.4590277777778 253 37.6833333333332 253 38.131944444444 253 C 38.5805555555552 253 38.8048611111108 253 39.253472222222 253 C 39.7020833333332 253 39.9263888888888 253 40.375 253 C 40.8236111111112 253 41.0479166666668 253 41.496527777778 253 C 41.9451388888892 253 42.1694444444448 253 42.618055555556 253 C 43.0666666666668 253 43.2909722222222 253 43.739583333333 253 C 44.1881944444442 253 44.4124999999998 253 44.861111111111 253 C 45.3097222222222 253 45.5340277777778 253 45.982638888889 253 C 46.4312500000002 253 46.6555555555558 253 47.104166666667 253 C 47.5527777777778 253 47.7770833333332 253 48.225694444444 253 C 48.6743055555552 253 48.8986111111108 253 49.347222222222 253 C 49.7958333333332 253 50.0201388888888 253 50.46875 253 C 50.9173611111112 253 51.1416666666668 253 51.590277777778 253 C 52.0388888888892 253 52.2631944444448 253 52.711805555556 253 C 53.1604166666668 253 53.384722222222194 253 53.833333333333 253 C 54.28194444444421 253 54.506249999999795 253 54.954861111111 253 C 55.40347222222219 253 55.62777777777781 253 56.076388888889 253 C 56.525000000000205 253 56.74930555555579 253 57.197916666667 253 C 57.646527777777806 253 57.8708333333332 253 58.319444444444 253 C 58.7680555555552 253 58.9923611111108 253 59.440972222222 253 C 59.8895833333332 253 60.1138888888888 253 60.5625 253 C 61.0111111111112 253 61.2354166666668 253 61.684027777778 253 C 62.1326388888892 253 62.3569444444448 253 62.805555555556 253 C 63.2541666666668 253 63.478472222222194 253 63.927083333333 253 C 64.3756944444442 253 64.5999999999998 253 65.048611111111 253 C 65.49722222222219 253 65.72152777777781 253 66.170138888889 253 C 66.6187500000002 253 66.8430555555558 253 67.291666666667 253 C 67.7402777777778 253 67.9645833333332 253 68.413194444444 253 C 68.86180555555521 253 69.0861111111108 253 69.534722222222 253 C 69.9833333333332 253 70.2076388888888 253 70.65625 253 C 71.1048611111112 253 71.3291666666668 253 71.777777777778 253 C 72.2263888888892 253 72.45069444444479 253 72.899305555556 253 C 73.3479166666668 253 73.5722222222222 253 74.020833333333 253 C 74.4694444444442 253 74.6937499999998 253 75.142361111111 253 C 75.59097222222219 253 75.81527777777781 253 76.263888888889 253 C 76.7125000000002 253 76.9368055555558 253 77.385416666667 253 C 77.8340277777778 253 78.0583333333332 253 78.506944444444 253 C 78.95555555555521 253 79.1798611111108 253 79.628472222222 253 C 80.0770833333332 253 80.3013888888888 253 80.75 253 C 81.1986111111112 253 81.4229166666668 253 81.871527777778 253 C 82.3201388888892 253 82.54444444444479 253 82.993055555556 253 C 83.4416666666668 253 83.6659722222222 253 84.114583333333 253 C 84.5631944444442 253 84.7874999999998 253 85.236111111111 253 C 85.68472222222219 253 85.9090277777778 253 86.357638888889 253 C 86.80625000000019 253 87.03055555555581 253 87.479166666667 253 C 87.9277777777778 253 88.1520833333332 253 88.600694444444 253 C 89.04930555555521 253 89.2736111111108 253 89.722222222222 253 C 90.1708333333332 253 90.3951388888888 253 90.84375 253 C 91.2923611111112 253 91.5166666666668 253 91.965277777778 253 C 92.4138888888892 253 92.63819444444479 253 93.086805555556 253 C 93.5354166666668 253 93.7597222222222 253 94.208333333333 253 C 94.65694444444419 253 94.88124999999981 253 95.329861111111 253 C 95.7784722222222 253 96.0027777777778 253 96.451388888889 253 C 96.90000000000019 253 97.12430555555581 253 97.572916666667 253 C 98.0215277777778 253 98.2458333333332 253 98.694444444444 253 C 99.14305555555521 253 99.3673611111108 253 99.815972222222 253 C 100.2645833333332 253 100.4888888888888 253 100.9375 253 C 101.386111111112 253 101.610416666668 253 102.05902777778 253 C 102.507638888892 253 102.731944444448 253 103.18055555556 253 C 103.62916666666801 253 103.853472222222 253 104.30208333333 253 C 104.750694444442 253 104.974999999998 253 105.42361111111 253 C 105.87222222222199 253 106.09652777777801 253 106.54513888889 253 C 106.993750000002 253 107.218055555558 252.45352000000162 107.66666666667 252.0892 C 108.115277777778 251.72488000000163 108.33958333333199 251.1784 108.78819444444 251.1784 C 109.236805555552 251.1784 109.461111111108 253 109.90972222222 253 C 110.35833333333198 253 110.582638888888 241.52392 111.03125 231.748 C 111.479861111112 221.97208 111.70416666666802 211.5282399999999 112.15277777778 204.12040000000002 C 112.601388888892 196.7125599999999 112.825694444448 198.89848000001865 113.27430555556 194.7088 C 113.72291666666801 190.51912000001863 113.947222222222 187.36167999998136 114.39583333333 183.172 C 114.844444444442 178.98231999998134 115.068749999998 177.88936000000007 115.51736111111 173.7604 C 115.96597222222199 169.63144000000008 116.19027777777801 166.41327999999993 116.63888888889 162.5272 C 117.087500000002 158.64111999999994 117.311805555558 155.24080000000004 117.76041666667 154.33 C 118.209027777778 153.4192 118.43333333333199 154.33 118.88194444444 153.4192 C 119.330555555552 152.50839999999997 119.554861111108 146.8614400000001 120.00347222222 142.18600000000004 C 120.45208333333198 137.5105600000001 120.676388888888 132.77439999999999 121.125 130.042 C 121.573611111112 127.30960000000002 121.79791666666802 129.37408 122.24652777778 127.30960000000002 C 122.695138888892 125.24512 122.919444444448 121.84480000000947 123.36805555556 119.71960000000001 C 123.81666666666801 117.59440000000949 124.040972222222 119.71960000000001 124.48958333333 116.68360000000001 C 124.938194444442 113.64760000000001 125.162499999998 103.93240000000003 125.61111111111 100.28920000000002 C 126.05972222222199 96.64600000000002 126.28402777777801 100.28920000000002 126.73263888889 96.64600000000002 C 127.181250000002 93.00280000000001 127.405555555558 81.46600000000001 127.85416666667 79.94800000000001 C 128.302777777778 78.43 128.52708333333197 79.94800000000001 128.97569444444 78.43 C 129.424305555552 76.912 129.64861111110798 75.21184000000014 130.09722222222 71.75080000000003 C 130.545833333332 68.28976000000013 130.770138888888 64.82872 131.21875 61.12479999999999 C 131.667361111112 57.42088 131.891666666668 56.20647999999993 132.34027777778 53.23120000000003 C 132.78888888889202 50.255919999999946 133.013194444448 48.55576000001027 133.46180555556 46.24840000000003 C 133.91041666666803 43.94104000001026 134.58333333333 41.69440000000003 134.58333333333 41.69440000000003" fill="none" stroke-dasharray="none"></path><path class="highcharts-tracker" d="M -10 253 L 0 253 C 0 253 0.6729166666666802 253 1.1215277777778 253 C 1.5701388888889203 253 1.7944444444444803 253 2.2430555555556 253 C 2.69166666666668 253 2.91597222222222 253 3.3645833333333 253 C 3.81319444444442 253 4.03749999999998 253 4.4861111111111 253 C 4.93472222222222 253 5.15902777777778 253 5.6076388888889 253 C 6.05625000000002 253 6.28055555555558 253 6.7291666666667 253 C 7.17777777777778 253 7.40208333333332 253 7.8506944444444 253 C 8.29930555555552 253 8.52361111111108 253 8.9722222222222 253 C 9.42083333333332 253 9.64513888888888 253 10.09375 253 C 10.5423611111112 253 10.7666666666668 253 11.215277777778 253 C 11.6638888888892 253 11.888194444444801 253 12.336805555556 253 C 12.7854166666668 253 13.0097222222222 253 13.458333333333 253 C 13.906944444444202 253 14.1312499999998 253 14.579861111111 253 C 15.0284722222222 253 15.2527777777778 253 15.701388888889 253 C 16.150000000000198 253 16.3743055555558 253 16.822916666667 253 C 17.2715277777778 253 17.4958333333332 253 17.944444444444 253 C 18.3930555555552 253 18.617361111110803 253 19.065972222222 253 C 19.5145833333332 253 19.738888888888802 253 20.1875 253 C 20.636111111111198 253 20.8604166666668 253 21.309027777778 253 C 21.757638888889197 253 21.9819444444448 253 22.430555555556 253 C 22.8791666666668 253 23.1034722222222 253 23.552083333333 253 C 24.0006944444442 253 24.224999999999802 253 24.673611111111 253 C 25.1222222222222 253 25.3465277777778 253 25.795138888889 253 C 26.243750000000198 253 26.4680555555558 253 26.916666666667 253 C 27.3652777777778 253 27.589583333333202 253 28.038194444444 253 C 28.4868055555552 253 28.711111111110803 253 29.159722222222 253 C 29.6083333333332 253 29.832638888888802 253 30.28125 253 C 30.729861111111198 253 30.9541666666668 253 31.402777777778 253 C 31.851388888889197 253 32.0756944444448 253 32.524305555556 253 C 32.9729166666668 253 33.1972222222222 253 33.645833333333 253 C 34.0944444444442 253 34.3187499999998 253 34.767361111111 253 C 35.2159722222222 253 35.4402777777778 253 35.888888888889 253 C 36.3375000000002 253 36.5618055555558 253 37.010416666667 253 C 37.4590277777778 253 37.6833333333332 253 38.131944444444 253 C 38.5805555555552 253 38.8048611111108 253 39.253472222222 253 C 39.7020833333332 253 39.9263888888888 253 40.375 253 C 40.8236111111112 253 41.0479166666668 253 41.496527777778 253 C 41.9451388888892 253 42.1694444444448 253 42.618055555556 253 C 43.0666666666668 253 43.2909722222222 253 43.739583333333 253 C 44.1881944444442 253 44.4124999999998 253 44.861111111111 253 C 45.3097222222222 253 45.5340277777778 253 45.982638888889 253 C 46.4312500000002 253 46.6555555555558 253 47.104166666667 253 C 47.5527777777778 253 47.7770833333332 253 48.225694444444 253 C 48.6743055555552 253 48.8986111111108 253 49.347222222222 253 C 49.7958333333332 253 50.0201388888888 253 50.46875 253 C 50.9173611111112 253 51.1416666666668 253 51.590277777778 253 C 52.0388888888892 253 52.2631944444448 253 52.711805555556 253 C 53.1604166666668 253 53.384722222222194 253 53.833333333333 253 C 54.28194444444421 253 54.506249999999795 253 54.954861111111 253 C 55.40347222222219 253 55.62777777777781 253 56.076388888889 253 C 56.525000000000205 253 56.74930555555579 253 57.197916666667 253 C 57.646527777777806 253 57.8708333333332 253 58.319444444444 253 C 58.7680555555552 253 58.9923611111108 253 59.440972222222 253 C 59.8895833333332 253 60.1138888888888 253 60.5625 253 C 61.0111111111112 253 61.2354166666668 253 61.684027777778 253 C 62.1326388888892 253 62.3569444444448 253 62.805555555556 253 C 63.2541666666668 253 63.478472222222194 253 63.927083333333 253 C 64.3756944444442 253 64.5999999999998 253 65.048611111111 253 C 65.49722222222219 253 65.72152777777781 253 66.170138888889 253 C 66.6187500000002 253 66.8430555555558 253 67.291666666667 253 C 67.7402777777778 253 67.9645833333332 253 68.413194444444 253 C 68.86180555555521 253 69.0861111111108 253 69.534722222222 253 C 69.9833333333332 253 70.2076388888888 253 70.65625 253 C 71.1048611111112 253 71.3291666666668 253 71.777777777778 253 C 72.2263888888892 253 72.45069444444479 253 72.899305555556 253 C 73.3479166666668 253 73.5722222222222 253 74.020833333333 253 C 74.4694444444442 253 74.6937499999998 253 75.142361111111 253 C 75.59097222222219 253 75.81527777777781 253 76.263888888889 253 C 76.7125000000002 253 76.9368055555558 253 77.385416666667 253 C 77.8340277777778 253 78.0583333333332 253 78.506944444444 253 C 78.95555555555521 253 79.1798611111108 253 79.628472222222 253 C 80.0770833333332 253 80.3013888888888 253 80.75 253 C 81.1986111111112 253 81.4229166666668 253 81.871527777778 253 C 82.3201388888892 253 82.54444444444479 253 82.993055555556 253 C 83.4416666666668 253 83.6659722222222 253 84.114583333333 253 C 84.5631944444442 253 84.7874999999998 253 85.236111111111 253 C 85.68472222222219 253 85.9090277777778 253 86.357638888889 253 C 86.80625000000019 253 87.03055555555581 253 87.479166666667 253 C 87.9277777777778 253 88.1520833333332 253 88.600694444444 253 C 89.04930555555521 253 89.2736111111108 253 89.722222222222 253 C 90.1708333333332 253 90.3951388888888 253 90.84375 253 C 91.2923611111112 253 91.5166666666668 253 91.965277777778 253 C 92.4138888888892 253 92.63819444444479 253 93.086805555556 253 C 93.5354166666668 253 93.7597222222222 253 94.208333333333 253 C 94.65694444444419 253 94.88124999999981 253 95.329861111111 253 C 95.7784722222222 253 96.0027777777778 253 96.451388888889 253 C 96.90000000000019 253 97.12430555555581 253 97.572916666667 253 C 98.0215277777778 253 98.2458333333332 253 98.694444444444 253 C 99.14305555555521 253 99.3673611111108 253 99.815972222222 253 C 100.2645833333332 253 100.4888888888888 253 100.9375 253 C 101.386111111112 253 101.610416666668 253 102.05902777778 253 C 102.507638888892 253 102.731944444448 253 103.18055555556 253 C 103.62916666666801 253 103.853472222222 253 104.30208333333 253 C 104.750694444442 253 104.974999999998 253 105.42361111111 253 C 105.87222222222199 253 106.09652777777801 253 106.54513888889 253 C 106.993750000002 253 107.218055555558 252.45352000000162 107.66666666667 252.0892 C 108.115277777778 251.72488000000163 108.33958333333199 251.1784 108.78819444444 251.1784 C 109.236805555552 251.1784 109.461111111108 253 109.90972222222 253 C 110.35833333333198 253 110.582638888888 241.52392 111.03125 231.748 C 111.479861111112 221.97208 111.70416666666802 211.5282399999999 112.15277777778 204.12040000000002 C 112.601388888892 196.7125599999999 112.825694444448 198.89848000001865 113.27430555556 194.7088 C 113.72291666666801 190.51912000001863 113.947222222222 187.36167999998136 114.39583333333 183.172 C 114.844444444442 178.98231999998134 115.068749999998 177.88936000000007 115.51736111111 173.7604 C 115.96597222222199 169.63144000000008 116.19027777777801 166.41327999999993 116.63888888889 162.5272 C 117.087500000002 158.64111999999994 117.311805555558 155.24080000000004 117.76041666667 154.33 C 118.209027777778 153.4192 118.43333333333199 154.33 118.88194444444 153.4192 C 119.330555555552 152.50839999999997 119.554861111108 146.8614400000001 120.00347222222 142.18600000000004 C 120.45208333333198 137.5105600000001 120.676388888888 132.77439999999999 121.125 130.042 C 121.573611111112 127.30960000000002 121.79791666666802 129.37408 122.24652777778 127.30960000000002 C 122.695138888892 125.24512 122.919444444448 121.84480000000947 123.36805555556 119.71960000000001 C 123.81666666666801 117.59440000000949 124.040972222222 119.71960000000001 124.48958333333 116.68360000000001 C 124.938194444442 113.64760000000001 125.162499999998 103.93240000000003 125.61111111111 100.28920000000002 C 126.05972222222199 96.64600000000002 126.28402777777801 100.28920000000002 126.73263888889 96.64600000000002 C 127.181250000002 93.00280000000001 127.405555555558 81.46600000000001 127.85416666667 79.94800000000001 C 128.302777777778 78.43 128.52708333333197 79.94800000000001 128.97569444444 78.43 C 129.424305555552 76.912 129.64861111110798 75.21184000000014 130.09722222222 71.75080000000003 C 130.545833333332 68.28976000000013 130.770138888888 64.82872 131.21875 61.12479999999999 C 131.667361111112 57.42088 131.891666666668 56.20647999999993 132.34027777778 53.23120000000003 C 132.78888888889202 50.255919999999946 133.013194444448 48.55576000001027 133.46180555556 46.24840000000003 C 133.91041666666803 43.94104000001026 134.58333333333 41.69440000000003 134.58333333333 41.69440000000003 L 144.58333333333 41.69440000000003" fill="none" stroke="rgba(192,192,192,0.0001)" stroke-linejoin="round" stroke-width="20" visibility="visible"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-areaspline-series highcharts-color-undefined highcharts-tracker" clip-path="none" transform="translate(20,10) scale(1 1)"></g></g><g class="highcharts-plot-lines-5"><path d="M 173 10 L 173 263" fill="none" stroke="#4B4D4D" stroke-dasharray="2,2" stroke-width="2" visibility="visible"></path></g><g class="highcharts-axis-labels highcharts-xaxis-labels"></g><g class="highcharts-axis-labels highcharts-yaxis-labels"></g></svg><div class="highcharts-axis-labels highcharts-xaxis-labels" style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span opacity="1" style="font-family: Roboto, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(123, 124, 126); cursor: default; margin-left: 0px; margin-top: 0px; left: 10px; top: 271px; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;" transform="translate(0,0)">00h</span><span opacity="1" style="font-family: Roboto, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(123, 124, 126); cursor: default; margin-left: 0px; margin-top: 0px; left: 90.75px; top: 271px; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;" transform="translate(0,0)">06h</span><span opacity="1" style="font-family: Roboto, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(123, 124, 126); cursor: default; margin-left: 0px; margin-top: 0px; left: 171.5px; top: 271px; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;" transform="translate(0,0)">12h</span><span opacity="1" style="font-family: Roboto, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(123, 124, 126); cursor: default; margin-left: 0px; margin-top: 0px; left: 252.25px; top: 271px; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;" transform="translate(0,0)">18h</span><span opacity="1" style="font-family: Roboto, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(123, 124, 126); cursor: default; margin-left: 0px; margin-top: 0px; left: 333px; top: 271px; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;" transform="translate(0,0)">00h</span></div></div></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 no-padding pvsystem-widget-container mod-full-and-half-height">
+<div class="col-sm-6 col-lg-12 pvsystem-widget-container mod-half-height-top">
+<div class="widget aspect-1-1-content mod-pvsystem-widget js-earnings-widget">
+<div class="savings-widget-title mod-info">
+        Ertrag
+        <span class="c-context-help-trigger js-context-help-trigger js-page-guide-element page-guide-element icon-sw-info-100 mod-widget-header" data-content="Der dargestellte Wert setzt sich aus dem &lt;b&gt;Ertrag + der Ersparnis&lt;/b&gt; Ihrer PV-Anlage für den angeführten Zeitbereich zusammen.&lt;br&gt;&lt;b&gt;Ertrag&lt;/b&gt; = Energie ins Netz multipliziert mit einem Tarif.&lt;br&gt;&lt;b&gt;Ersparnis&lt;/b&gt; = Direkt verbrauchte Energie multipliziert mit einem Tarif.&lt;br&gt;&lt;b&gt;Um die Funktion nutzen zu können, müssen vorab Tarife in den Einstellungen hinterlegt werden!&lt;/b&gt;"></span>
+</div>
+<div class="savings-widget-body">
+<div class="swiper-container savings-swiper-container js-earning-container swiper-container-horizontal">
+<div class="swiper-wrapper" style="transform: translate3d(-364px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide mod-centered swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="3" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="Ertrag" src="/Content/images/savings_wallet.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-heading js-savings-heading">Gesamt</span>
+<br/>
+<span class="savings-value js-savings-value">2.621,15</span>
+<span class="savings-unit js-savings-unit">EUR</span>
+</div>
+</div>
+<div class="swiper-slide mod-centered swiper-slide-active" data-swiper-slide-index="0" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="Ertrag" src="/Content/images/savings_wallet.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-heading js-savings-heading">Heute</span>
+<br/>
+<span class="savings-value js-savings-value">0,00</span>
+<span class="savings-unit js-savings-unit">EUR</span>
+</div>
+</div>
+<div class="swiper-slide mod-centered swiper-slide-next" data-swiper-slide-index="1" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="Ertrag" src="/Content/images/savings_wallet.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-heading js-savings-heading">Dezember 2021</span>
+<br/>
+<span class="savings-value js-savings-value">0,00</span>
+<span class="savings-unit js-savings-unit">EUR</span>
+</div>
+</div>
+<div class="swiper-slide mod-centered" data-swiper-slide-index="2" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="Ertrag" src="/Content/images/savings_wallet.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-heading js-savings-heading">2021</span>
+<br/>
+<span class="savings-value js-savings-value">0,00</span>
+<span class="savings-unit js-savings-unit">EUR</span>
+</div>
+</div>
+<div class="swiper-slide mod-centered" data-swiper-slide-index="3" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="Ertrag" src="/Content/images/savings_wallet.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-heading js-savings-heading">Gesamt</span>
+<br/>
+<span class="savings-value js-savings-value">2.621,15</span>
+<span class="savings-unit js-savings-unit">EUR</span>
+</div>
+</div>
+<div class="swiper-slide mod-centered swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="Ertrag" src="/Content/images/savings_wallet.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-heading js-savings-heading">Heute</span>
+<br/>
+<span class="savings-value js-savings-value">0,00</span>
+<span class="savings-unit js-savings-unit">EUR</span>
+</div>
+</div></div>
+<div class="swiper-pagination mod-small mod-grey js-earning-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-12 pvsystem-widget-container mod-half-height-bottom">
+<div class="widget aspect-1-1-content mod-pvsystem-widget js-savings-widget">
+<div class="savings-widget-title">
+        CO<sub>2</sub> Ersparnis Gesamt
+      </div>
+<div class="savings-widget-body">
+<div class="swiper-container savings-swiper-container js-co2-saving-container swiper-container-horizontal">
+<div class="swiper-wrapper" style="transform: translate3d(-364px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide mod-centered swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="CO&lt;sub&gt;2&lt;/sub&gt; Ersparnis" src="/Content/images/savings_car.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-value js-savings-value">52.103</span>
+<span class="savings-unit js-savings-unit">km</span>
+</div>
+</div>
+<div class="swiper-slide mod-centered swiper-slide-active" data-swiper-slide-index="0" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="CO&lt;sub&gt;2&lt;/sub&gt; Ersparnis" src="/Content/images/savings_co2emission.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-value js-savings-value">12,98</span>
+<span class="savings-unit js-savings-unit">t</span>
+</div>
+</div>
+<div class="swiper-slide mod-centered swiper-slide-next" data-swiper-slide-index="1" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="CO&lt;sub&gt;2&lt;/sub&gt; Ersparnis" src="/Content/images/savings_trees.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-value js-savings-value">333</span>
+</div>
+</div>
+<div class="swiper-slide mod-centered" data-swiper-slide-index="2" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="CO&lt;sub&gt;2&lt;/sub&gt; Ersparnis" src="/Content/images/savings_car.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-value js-savings-value">52.103</span>
+<span class="savings-unit js-savings-unit">km</span>
+</div>
+</div>
+<div class="swiper-slide mod-centered swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 364px;">
+<div class="savings-swiper-image_row">
+<img alt="CO&lt;sub&gt;2&lt;/sub&gt; Ersparnis" src="/Content/images/savings_co2emission.svg"/>
+</div>
+<div class="savings-swiper-value_row">
+<span class="savings-value js-savings-value">12,98</span>
+<span class="savings-unit js-savings-unit">t</span>
+</div>
+</div></div>
+<div class="swiper-pagination mod-small mod-grey js-co2-saving-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 pvsystem-widget-container mod-image-widget">
+<div class="widget aspect-1-1-content mod-pvsystem-widget mod-cursor-pointer js-pvs-image-container">
+<div class="savings-widget-title">5kWp Simbürger</div>
+<div class="savings-widget-body">
+<div alt="5kWp Simbürger" class="img-responsive ratio-4-3 js-image-widget" style="background-image: url(https://froniussestimagesweprod.blob.core.windows.net/pvsystem-images/673dc46c-2863-4996-a638-a2480124484c/06efa6e1-c80b-cac4-2426-88de0f2c3467)"></div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-8 pvsystem-widget-container mod-weather-widget js-weather-widget-container">
+<div class="widget fill-parent mod-pvsystem-widget">
+<div class="savings-widget-title">
+<div class="pull-left weather-location-name mod-overlay js-weather-location">Neumarkt</div>
+<div class="pull-right">
+<span class="icon-sw-info-200 u-text-red premium-overlay-toggle js-overlay-toggle"></span>
+</div>
+</div>
+<solarweb-weather-widget class="js-weather-widget hydrated"><solarweb-current-weather class="mod-light hydrated"><div class="temp-container"><div class="status"><img class="icon" src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/weather-icons/bright.svg?v=1624528508373"/><div class="temperature">5°C</div></div><div class="description">heiter</div></div><div class="additional-infos"><solarweb-current-weather-parameter class="mod-light hydrated"><div class="parameter-icon"><img src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/wind.svg?v=1624528508373"/></div><div class="parameter-value">3,9</div><div class="parameter-unit">m/s</div></solarweb-current-weather-parameter></div></solarweb-current-weather><solarweb-weather-forecast class="hydrated"><div class="days mod-light"><solarweb-forecast-day class="hydrated" ref-temp-max="6" ref-temp-min="-11"><div class="day-label">Heute</div><img alt="bright" class="day-icon" src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/weather-icons/bright.svg?v=1624528508373"/><solarweb-candlestick class="hydrated" ref-max="6" ref-min="-11"><div style="flex-grow: 0;"></div><div>6°C</div><div class="temp-range" style="flex-grow: 0.470588;"></div><div>-2°C</div><div style="flex-grow: 0.529412;"></div></solarweb-candlestick></solarweb-forecast-day><solarweb-forecast-day class="hydrated" ref-temp-max="6" ref-temp-min="-11"><div class="day-label">Mo</div><img alt="mostly_cloudy" class="day-icon" src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/weather-icons/mostly_cloudy.svg?v=1624528508373"/><solarweb-candlestick class="hydrated" ref-max="6" ref-min="-11"><div style="flex-grow: 0.352941;"></div><div>0°C</div><div class="temp-range" style="flex-grow: 0.176471;"></div><div>-3°C</div><div style="flex-grow: 0.470588;"></div></solarweb-candlestick></solarweb-forecast-day><solarweb-forecast-day class="hydrated" ref-temp-max="6" ref-temp-min="-11"><div class="day-label">Di</div><img alt="bright" class="day-icon" src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/weather-icons/bright.svg?v=1624528508373"/><solarweb-candlestick class="hydrated" ref-max="6" ref-min="-11"><div style="flex-grow: 0.529412;"></div><div>-3°C</div><div class="temp-range" style="flex-grow: 0.411765;"></div><div>-10°C</div><div style="flex-grow: 0.0588235;"></div></solarweb-candlestick></solarweb-forecast-day><solarweb-forecast-day class="hydrated" ref-temp-max="6" ref-temp-min="-11"><div class="day-label">Mi</div><img alt="bright" class="day-icon" src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/weather-icons/bright.svg?v=1624528508373"/><solarweb-candlestick class="hydrated" ref-max="6" ref-min="-11"><div style="flex-grow: 0.529412;"></div><div>-3°C</div><div class="temp-range" style="flex-grow: 0.470588;"></div><div>-11°C</div><div style="flex-grow: 0;"></div></solarweb-candlestick></solarweb-forecast-day><solarweb-forecast-day class="hydrated" ref-temp-max="6" ref-temp-min="-11"><div class="day-label">Do</div><img alt="overcast" class="day-icon" src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/weather-icons/overcast.svg?v=1624528508373"/><solarweb-candlestick class="hydrated" ref-max="6" ref-min="-11"><div style="flex-grow: 0.470588;"></div><div>-2°C</div><div class="temp-range" style="flex-grow: 0.411765;"></div><div>-9°C</div><div style="flex-grow: 0.117647;"></div></solarweb-candlestick></solarweb-forecast-day><solarweb-forecast-day class="hydrated" ref-temp-max="6" ref-temp-min="-11"><div class="day-label">Fr</div><img alt="mostly_cloudy" class="day-icon" src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/weather-icons/mostly_cloudy.svg?v=1624528508373"/><solarweb-candlestick class="hydrated" ref-max="6" ref-min="-11"><div style="flex-grow: 0.235294;"></div><div>2°C</div><div class="temp-range" style="flex-grow: 0.470588;"></div><div>-6°C</div><div style="flex-grow: 0.294118;"></div></solarweb-candlestick></solarweb-forecast-day><solarweb-forecast-day class="hydrated" ref-temp-max="6" ref-temp-min="-11"><div class="day-label">Sa</div><img alt="cloudy" class="day-icon" src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/weather-icons/cloudy.svg?v=1624528508373"/><solarweb-candlestick class="hydrated" ref-max="6" ref-min="-11"><div style="flex-grow: 0.294118;"></div><div>1°C</div><div class="temp-range" style="flex-grow: 0.411765;"></div><div>-6°C</div><div style="flex-grow: 0.294118;"></div></solarweb-candlestick></solarweb-forecast-day><solarweb-forecast-day class="hydrated" ref-temp-max="6" ref-temp-min="-11"><div class="day-label">So</div><img alt="heavy_rain" class="day-icon" src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/weather-icons/heavy_rain.svg?v=1624528508373"/><solarweb-candlestick class="hydrated" ref-max="6" ref-min="-11"><div style="flex-grow: 0.117647;"></div><div>4°C</div><div class="temp-range" style="flex-grow: 0.294118;"></div><div>-1°C</div><div style="flex-grow: 0.588235;"></div></solarweb-candlestick></solarweb-forecast-day><solarweb-forecast-day class="hydrated" ref-temp-max="6" ref-temp-min="-11"><div class="day-label">Mo</div><img alt="snowfall" class="day-icon" src="/node_modules/@fronius-se/weather-widget/dist/collection/assets/weather-icons/snowfall.svg?v=1624528508373"/><solarweb-candlestick class="hydrated" ref-max="6" ref-min="-11"><div style="flex-grow: 0.235294;"></div><div>2°C</div><div class="temp-range" style="flex-grow: 0.117647;"></div><div>0°C</div><div style="flex-grow: 0.647059;"></div></solarweb-candlestick></solarweb-forecast-day></div></solarweb-weather-forecast></solarweb-weather-widget>
+<div class="loading-progress mod-widget js-weather-widget-loading hidden">
+<div class="loading-progress-item1"></div>
+<div class="loading-progress-item2"></div>
+<div class="loading-progress-item3"></div>
+<div class="loading-progress-item4"></div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-8 pvsystem-widget-container mod-weather-widget mod-loading js-weather-widget-overlay-container hidden">
+<div class="widget fill-parent mod-pvsystem-widget">
+<div class="savings-widget-title mod-premium">
+<div class="pull-left premium-overlay-title">Neue Premium Funktionalität</div>
+<div class="pull-right">
+<span class="icon-sw-closebtn close-overlay js-overlay-toggle"></span>
+</div>
+</div>
+<div class="preview-background"></div>
+<solarweb-weather-widget class="js-weather-widget hydrated"><div></div></solarweb-weather-widget>
+<div class="loading-progress mod-widget js-weather-widget-loading">
+<div class="loading-progress-item1"></div>
+<div class="loading-progress-item2"></div>
+<div class="loading-progress-item3"></div>
+<div class="loading-progress-item4"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="js-meteo-wizard-template">
+</div>
+</div>
+<!-- Footer -->
+<div class="layout-footer js-footer">
+<div class="layout-goto-top">
+<div class="u-center u-max-page-width row">
+<div class="hidden-xs hidden-sm col-md-8">
+<div class="bread-crumb-nav js-bread-crumb-nav">
+<div class="bread-crumb">
+<ul class="nav nav-pills">
+<li><a href="/PvSystems/Widgets">Meine Anlagen</a></li><li><div class="bread-crumb-separator">›</div></li><li><p>5kWp Simbürger</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-md-4" style="padding: 12px 19px 2px 12px;">
+<a class="page-scroll" href="#page-top">
+<span class="goto-top-text">Nach oben</span>
+<span class="goto-top-arrow"></span>
+</a>
+</div>
+</div>
+</div>
+<div class="u-bg-footer">
+<div class="u-center u-max-page-width row">
+<div class="col-xs-12 col-md-3 footer-container">
+<div class="footer-header">
+<a class="js-toggle">Downloads</a>
+</div>
+<ul class="footer-list js-footer-collapse" id="downloads">
+<li>
+<a href="https://play.google.com/store/apps/details?id=com.fronius.solarweb" target="_blank">Solar.web App - Android</a>
+</li>
+<li>
+<a href="https://apps.apple.com/at/app/id1528302827" target="_blank">Solar.web App - iOS</a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=com.fronius.solarstart" target="_blank">Solar.start App - Android</a>
+</li>
+<li>
+<a href="https://apps.apple.com/at/app/solar-start/id1509399310" target="_blank">Solar.start App - iOS</a>
+</li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-3 footer-container">
+<div class="footer-header">
+<a class="js-toggle">Fronius Dienste</a>
+</div>
+<ul class="footer-list js-footer-collapse" id="services">
+<li>
+<a href="https://solartv.solarweb.com/" target="_blank">Fronius Solar.TV</a>
+</li>
+<li>
+<a href="https://www.fronius.com/se-referenzen" target="_blank">Referenzliste</a>
+</li>
+<li>
+<a href="https://www.fronius.com/fsp-suche" target="_blank">Installateure finden</a>
+</li>
+<li>
+<a href="https://fronius.solarconfigurator.de/solar.configurator/quick?login=true" target="_blank">Fronius Solar.Configurator</a>
+</li>
+<li>
+<span class="label label-primary">NEW</span>
+<a href="https://creator.fronius.com/?login=true" target="_blank">Fronius Solar.creator</a>
+</li>
+<li>
+<a href="/Home/PremiumInfo">Solar.web Premium</a>
+</li>
+<li>
+<a href="/ProductRegistration/Info">Fronius Garantie</a>
+</li>
+<li>
+<a href="https://www.fronius.com/solarweb-faq-de" target="_blank">FAQs</a>
+</li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-3 footer-container">
+<div class="footer-header">
+<a class="js-toggle">Kontakte</a>
+</div>
+<ul class="footer-list js-footer-collapse" id="contact">
+<li>
+<a href="https://www.fronius.com/de/kontakt" target="_blank">Kontakt</a>
+</li>
+<li>
+<a href="/Home/TermsAndConditions">Nutzungsbedingungen</a>
+</li>
+<li>
+<a href="/Home/Imprint">Impressum</a>
+</li>
+<li>
+<a href="https://www.fronius.com/de/datenschutzerklaerung" target="_blank">Datenschutzerklärung</a>
+</li>
+<li>
+<a href="https://www.fronius.com/en/cookie-policy/cookie-policy-solarweb" target="_blank">Cookie Policy</a>
+</li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-3 footer-container">
+<div class="footer-header">
+<a class="js-toggle">Soziale Medien</a>
+</div>
+<ul class="footer-list js-footer-collapse" id="social">
+<li>
+<a href="https://www.fronius.com/solar-facebook" target="_blank"><span class="social social-facebook" style="font-size: 20px; margin-right: 10px; margin-bottom: 5px"></span>Facebook</a>
+</li>
+<li>
+<a href="https://www.fronius.com/solar-instagram" target="_blank"><span class="social social-instagram" style="font-size: 20px; margin-right: 10px; margin-bottom: 5px"></span>Instagram</a>
+</li>
+<li>
+<a href="https://www.fronius.com/solar-twitter" target="_blank"><span class="social social-twitter" style="font-size: 20px; margin-right: 10px; margin-bottom: 5px"></span>Twitter</a>
+</li>
+<li>
+<a href="https://www.fronius.com/solar-youtube" target="_blank"><span class="social social-youtube" style="font-size: 20px; margin-right: 10px"></span>YouTube</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="u-bg-extra-dark">
+<div class="u-center u-max-page-width row">
+<div class="col-xs-9 layout-footer-copyright">
+<a href="https://www.fronius.com/de" target="_blank">© Fronius International GmbH</a>
+</div>
+<div class="col-xs-3 layout-footer-version">3.14.14.0</div>
+</div>
+</div>
+</div>
+<script>
+    SOLARWEB_CLIENT_ENVIRONMENT = { GlobalScriptResources };
+  </script>
+<script src="/dist/2785.8692bad49a997c2a426b.bundle.js"></script><script src="/dist/5946.ead8b056d0faff4c718d.bundle.js"></script><script src="/dist/7432.9b6e6c28d2222ccd97cf.bundle.js"></script><script src="/dist/8.b0d3e8f50f7e870d410d.bundle.js"></script><script src="/dist/8840.a9425b8528b28e5a089d.bundle.js"></script><script src="/dist/4814.4ed495be8aada3cc9d79.bundle.js"></script><script src="/dist/2651.d12ff36686f6ed51f256.bundle.js"></script><script src="/dist/7174.400e352848c6a0e67f17.bundle.js"></script><iframe aria-hidden="true" name="__uspapiLocator" role="presentation" style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;" tabindex="-1" title="Blank"></iframe><iframe aria-hidden="true" role="presentation" src="https://consentcdn.cookiebot.com/sdk/bc-v3.min.html" style="position: absolute; width: 1px; height: 1px; top: -9999px;" tabindex="-1" title="Blank"></iframe><script id="CookiebotCustomScript" type="text/javascript">function showCookieBanner(){var n=document.getElementById("cookiebanner"),t=parseInt(n.offsetHeight);n.classList.remove("active");cookieBannerSliderPos+=4;cookieBannerSliderPos<t?setTimeout(function(){showCookieBanner()},1):(cookieBannerSliderPos=0,n.classList.add("active"))}function hideCookieBanner(){var n=document.getElementById("cookiebanner");n.style.display="none"}function addCookieAppName(){var n=window.location.host;n=n.slice(0,n.lastIndexOf("."));n.indexOf("www.")==0&&(n=n.slice(4));n.indexOf(".")>0&&(n=n.replace(/./g,"-"));document.getElementById("cookiebanner").classList.add(n)}var cookieBannerSliderPos=0;addCookieAppName()</script><script src="/dist/7555.27f866d0132d6eb5a5f4.bundle.js"></script><script src="/dist/PvSystems_PvSystem.76d562f4da715f298b29.bundle.js"></script> <script>(function() { window["ViewBundle"] = __solarweb_PvSystems_PvSystem; })();</script>
+<script nomodule="" src="/node_modules/@fronius-se/weather-widget/www/build/solarweb-weather-widget.js?v=OH_812TMjafyvOAKCRYxMGPVg2"></script>
+<script src="/node_modules/@fronius-se/weather-widget/www/build/solarweb-weather-widget.esm.js?v=OH_rciDFFpRT3QvLnlKLF3C-w2" type="module"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    const weatherWidgetConfig = {
+      strExpectedYield: "Erwarteter Ertrag",
+      assetsDir: "/node_modules/@fronius-se/weather-widget/dist/collection/assets",
+      locale: "de"
+    };
+
+    const initWeatherWidget = ViewBundle.configureWeatherWidget(weatherWidgetConfig, { errorLoadingData: "Fehler beim Laden der Daten." });
+    const weatherWidgetContainer = $(".js-weather-widget-container");
+
+    const isPublicDisplayMode = false;
+    if (isPublicDisplayMode) {
+      initWeatherWidget(weatherWidgetContainer, "/PvSystems/GetWeatherWidgetData?pvSystemId=673dc46c-2863-4996-a638-a2480124484c", 84600);
+    } else {
+      initWeatherWidget(weatherWidgetContainer, "/PvSystems/GetWeatherWidgetData?pvSystemId=673dc46c-2863-4996-a638-a2480124484c");
+    }
+
+    const overlayAvailable = true;
+    if (overlayAvailable) {
+      var overlayContainer = $(".js-weather-widget-overlay-container");
+      $(".js-overlay-toggle").on("click", function() {
+        overlayContainer.toggleClass("hidden");
+        weatherWidgetContainer.toggleClass("hidden");
+
+        initWeatherWidget(overlayContainer, "/PvSystems/GetStaticWeatherWidgetData");
+      });
+    }
+  });
+</script>
+<script>
+  $(function(){
+    const config = {
+      chartDataUrl: "/Chart/GetWidgetChart?PvSystemId=673dc46c-2863-4996-a638-a2480124484c",
+      isH24TimeFormat: true,
+      numberDecimalSeparator: ",",
+      olsonTz: "Europe/Berlin",
+      isPublicDisplay: false
+    };
+
+    const strings = {
+      errorWhileLoadingChartData: "Fehler beim Laden der Diagrammdaten.",
+      feedIn: "Einspeisung",
+      infoSystemLivePlot: "Leistungsbilanz am Einspeisepunkt. Im oberen Bereich wird die ins &#246;ffentliche Netz eingespeiste Energie angezeigt (gelb). Im unteren Bereich wird die vom &#246;ffentlichen Netz bezogene Energie angezeigt (grau).",
+      lastUpdate: "Letzte Aktualisierung",
+      noData: "Keine Daten vorhanden",
+      performanceOfPvSystem: "Leistungsverlauf der Anlage",
+      production: "Produktion",
+      usage: "Bezug"
+    };
+
+    ViewBundle.configureEnergyBalanceChart($(".js-energyflowchart-container"), config, strings);
+  });
+</script>
+<script type="text/javascript">
+    (function() {
+      const widget = ViewBundle.configureEnergyFlowWidget({
+        container: $('.js-live-data-widget'),
+        realtimePageUrl: "/PvSystems/Realtime?pvSystemId=673dc46c-2863-4996-a638-a2480124484c",
+        realtimeDataUrl: "/ActualData/GetCompareDataForPvSystem?pvSystemId=673dc46c-2863-4996-a638-a2480124484c",
+        imagePath: "/node_modules/@fronius-se/energy-flow-widgets/dist/images",
+        peakPower: 5000,
+        lang: "de",
+        enableDetailsOverlay: true,
+        hasGen24Inverter: false,
+        overlayShownAnalyticsUrl: "/Analytics/SubmeterOverlayShown",
+        overlayPossibleAnalyticsUrl: "/Analytics/SubmeterOverlayPossible",
+        pvSystemId: "673dc46c-2863-4996-a638-a2480124484c"
+      });
+      $(() => widget.updateFromServer());
+    })()
+  </script>
+<script>
+      $(function() {
+        ViewBundle.configureInlineMessageDisplay();
+      });
+    </script>
+<script type="text/javascript">
+    $(function() {
+      ViewBundle.initAndStartAutomaticSwipers();
+      ViewBundle.configureCampaignWidgets($(".js-campaign-widget"));
+
+      $(".js-energy-balance-help-text").on("click", function(e) {
+        e.stopPropagation();
+      });
+
+      $('.js-energyflowchart-container')
+        .on('click',
+          function() {
+            window.location.href = '/Chart/Chart?pvSystemId=673dc46c-2863-4996-a638-a2480124484c';
+          });
+
+      $('.js-pvs-image-container')
+        .on('click',
+          function() {
+            window.location.href = '/PvSystemSettings/UploadImage?pvSystemId=673dc46c-2863-4996-a638-a2480124484c';
+          });
+    });
+  </script>
+<script>(() => window['LayoutContentExports'] = window['__solarweb_global-layout-exports__Layout-content'])()</script>
+<script>
+  LayoutContentExports["Promise_MeteoProWizard"]
+    .then(init)
+    .then(loadBootstrapSelectLocalisation)
+    .catch(e => console.error("Failed to lazy-load MeteoProWizard", e));
+
+  function loadBootstrapSelectLocalisation(mpw){   
+      
+      const tag  = document.createElement("script");
+      tag.src = "/node_modules/bootstrap-select/dist/js/i18n/defaults-de_DE.js?v=OH_cdQ-N2j_16k5yN4WSn8lHQ2";
+      document.body.appendChild(tag);
+      
+    return mpw;
+  }
+
+  function init(mpw) {
+    var MeteoProWizard = mpw
+    var wizardType = "SuspendedWizard";
+
+    var meteoPro = new MeteoProWizard.MeteoProSelection(
+      [
+        {
+          content: $(".js-mps-wizard-0"),
+          title: "",
+          cancelAction: "remind_later",
+          okAction: "begin",
+          screentype: "start"
+        },
+        {
+          content: $(".js-mps-wizard-1"),
+          title: "Wichtige Information",
+          cancelAction: "none",
+          okAction: "acknowledge",
+          screentype: "content"
+        },
+        {
+          content: $(".js-mps-wizard-2"),
+          title: "W&#228;hlen Sie eine Anlage aus",
+          cancelAction: "back",
+          okAction: "fetchData",
+          screentype: "content"
+        },
+        {
+          content: $(".js-mps-wizard-3"),
+          title: "Bitte &#252;berpr&#252;fen Sie den Standort",
+          cancelAction: "back",
+          okAction: "next",
+          screentype: "content"
+        },
+        {
+          content: $(".js-mps-wizard-4"),
+          title: "Prognoseparameter",
+          cancelAction: "back",
+          okAction: "createSummary",
+          screentype: "content"
+        },
+        {
+          content: $(".js-mps-wizard-5"),
+          title: "Zusammenfassung",
+          cancelAction: "back",
+          okAction: "save",
+          screentype: "content"
+        }
+      ],
+      {
+        saveUrl: "/UserSettings/SaveMeteoProData",
+        fetchPvSystemsUrl: "/UserSettings/GetSelectablePvSystems",
+        fetchSelectedPvSystemUrl: "/UserSettings/GetSelectedPvSystem",
+        dismissWizardUrl: "/DismissedUserNotifications/AddEnMetWizard",
+        dismissableWizardParameter: {
+          meteoWizardType:
+            "SuspendedWizard"
+        },
+        strings: {
+          remindLater: "Sp&#228;ter erinnern",
+          begin: "Jetzt einrichten",
+          back: "Zur&#252;ck",
+          next: "Weiter",
+          save: "Abschlie&#223;en",
+          finish: "OK",
+          fetchData: "Weiter",
+          acknowledge: "Akzeptieren",
+          pleaseSelect: "Bitte auswählen",
+          noPvSystems: "Für diesen Login sind keine PV-Anlagen hinterlegt."
+        }
+      },
+      {
+        north: "Nord",
+        northEast: "Nordost",
+        east: "Ost",
+        southEast: "S&#252;dost",
+        south: "S&#252;d",
+        southWest: "S&#252;dwest",
+        west: "West",
+        northWest: "Nordwest"
+      },
+      {
+        cookie: {
+          name: "MeteoProSelection__RemindLater_8155a520-3e22-4c15-aa3d-a5e4013f1e83",
+          lifetimeInDays: 3
+        }
+      });
+
+    var meteoNoPro = new MeteoProWizard.MeteoSelectionNoPro(
+      [
+        {
+          content: $(".js-ms-wizard-0"),
+          title: "",
+          cancelAction: "infolink",
+          okAction: "redirect",
+          screentype: "start"
+        }
+      ],
+      {
+        saveUrl: "/WebShop/GoToShop?entryPoint=Premium",
+        infolinkUrl: "/Home/PremiumInfo",
+        dismissWizardUrl: "/DismissedUserNotifications/AddEnMetWizard",
+        dismissableWizardParameter: {
+          meteoWizardType:
+            "SuspendedWizard"
+        },
+        strings: {
+          infolink: "Mehr Information",
+          redirect: "Premium Mitglied werden"
+        }
+      },
+      {
+        cookie: {
+          name: "MeteoSelectionNoPro__RemindLater",
+          lifetimeInDays: 14
+        }
+      });
+
+    var meteoRenew = new MeteoProWizard.MeteoRenew([
+        {
+          content: $(".js-mps-wizard-0"),
+          title: "",
+          cancelAction: "redirect",
+          okAction: "finish",
+          screentype: "start"
+        }
+      ],
+      {
+        renewMeteoProUrl: "/PvSystems/ExtendMeteoPro",
+        renewPvSystemId: "00000000-0000-0000-0000-000000000000",
+        strings: {
+          redirect: "Eine andere PV-Anlage ausw&#228;hlen",
+          finish: "Verl&#228;ngern"
+        }
+      },
+      {
+        cookie: {
+          name: "MeteoRenew__RemindLater_8155a520-3e22-4c15-aa3d-a5e4013f1e83",
+          lifetimeInDays: 3
+        }
+      },
+      meteoPro
+    );
+
+    var meteoAutoRenew = new MeteoProWizard.MeteoAutoRenew([
+        {
+          content: $(".js-mps-wizard-0"),
+          title: "",
+          cancelAction: "none",
+          okAction: "finish",
+          screentype: "start"
+        }
+      ],
+      {
+        renewMeteoProUrl: "/PvSystems/ExtendMeteoPro",
+        renewPvSystemId: "00000000-0000-0000-0000-000000000000",
+        strings: {
+          finish: "Verl&#228;ngern"
+        }
+      },
+      {
+        cookie: {
+          name: "MeteoAutoRenew__RemindLater_8155a520-3e22-4c15-aa3d-a5e4013f1e83",
+          lifetimeInDays: 3
+        }
+      }
+    );
+
+    if (wizardType === "ProWizard" && !meteoPro.isRemindDelayActive()) {
+      meteoPro.openWizard();
+    } else if (wizardType === "NoProWizard" && !meteoNoPro.isRemindDelayActive()) {
+      meteoNoPro.openWizard();
+    } else if (wizardType === "RenewWizard" && !meteoRenew.isRemindDelayActive()) {
+      meteoRenew.openWizard();
+    } else if (wizardType === "AutoRenewWizard" && !meteoAutoRenew.isRemindDelayActive()) {
+      meteoAutoRenew.openWizard();
+    }
+
+    $(".js-start-meteo-wizard").on("click", function() {
+      if (wizardType === "ProWizard" ||
+        wizardType === "SuspendedWizard" ||
+        (wizardType === "RenewWizard" && meteoRenew.redirectToMeteoProPerformed())) {
+        meteoPro.openWizard();
+      } else if (wizardType === "RenewWizard" && !meteoRenew.redirectToMeteoProPerformed()) {
+        meteoRenew.openWizard();
+      } else if (wizardType === "AutoRenewWizard") {
+        meteoAutoRenew.openWizard();
+      }
+    });
+    
+    return mpw;
+  }
+</script>
+<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR6qPzcNLa8nCte3gKkuJRHmMch0b0CJU"></script>
+<script>
+        $(function() {
+          LayoutContentExports.initMessages(
+            "/Messages/GetUnreadMessages",
+            "/Messages/MarkMessageAsRead",
+            "/Messages/GetUnreadMessageCountForUser"
+          );
+        });
+    </script>
+<script type="text/javascript">
+  GlobalAjaxSetup.helpers.LayoutAdaptions.init({ strings: { more: "mehr" } });
+
+  (function doGlobalAjaxSetup() {
+    var setup = GlobalAjaxSetup.self;
+    var setupUtils = GlobalAjaxSetup.utils;
+    var helpers = GlobalAjaxSetup.helpers;
+    
+    var userLockedUrl = "/Account/UserLocked?ReturnUrl=%2FPvSystems%2FPvSystem%3FpvSystemId%3D673dc46c-2863-4996-a638-a2480124484c&UserName=b.simbuerger%40aon.at";
+    var sessionExpiredUrl = "/Account/ExternalLogin?ReturnUrl=%2FPvSystems%2FPvSystem%3FpvSystemId%3D673dc46c-2863-4996-a638-a2480124484c&UserName=b.simbuerger%40aon.at";
+
+    function onServerError(event, jqXhr, settings) {
+      if (setupUtils.isRequestHandled(jqXhr)) {
+        return;
+      }
+      var data;
+      var dialogCssClass = "js-server-error-dialog";
+      try {
+        data = JSON.parse(jqXhr.responseText)["error"];
+        if (data == null)
+          throw "no data";
+      }
+      catch (e) {
+        data = { message: "Ein Fehler ist aufgetreten (" + jqXhr.status + " - " + jqXhr.statusText + ")" };
+      }
+
+      if (helpers.Dialog.isAnyOpenOfClass(dialogCssClass))
+        return;
+
+      helpers.Dialog.create(data.title || "Fehler",
+        data.message,
+        {
+          context: "danger",
+          cssClasses: dialogCssClass,
+          buttons: [helpers.Dialog.createOkButton()]
+        });
+    }
+
+    function onSessionExpired() {
+      window.location = sessionExpiredUrl;
+    }
+
+    function onUserLocked() {
+      window.location = userLockedUrl;
+    }
+
+    function onAccessForbidden() {
+      helpers.MessageBox.create("Zugriff verweigert", "Sie haben keine Berechtigung f&#252;r diese Seite.",
+        { context: "danger" });
+    }
+
+    function maybeShowUserNotification(responseJson) {
+      if (responseJson.dataType === "UserNotificationPermanent") {
+        helpers.MessageBox.create("Information", responseJson.data.message,
+          { context: responseJson.data.type });
+      }
+      if (responseJson.dataType === "UserNotification") {
+        $.notify({ message: responseJson.data.message }, { type: responseJson.data.type });
+      }
+    }
+
+    setup.attachServerErrorHandler(onServerError);
+
+    // Code 0 happens if browser cancels request e.g. due to network failure or security restrictions (CORS, Mixed content, ...)
+    // User abort of a request also results in code 0, but that is filtered in GlobalAjaxSetup already 
+    // (we don't want error message if request was cancelled on purpose).
+    setup.attachHandler(0, function (event, jqXhr, settings) {
+      // Only show message if the failed request is not a GET request (or determination of request type fails):
+      // Many GET requests occur in the background and are executed every x seconds, so they are automatically repaired when error is resolved.
+      // In this case, showing an error message (which the user has to dismiss) does more harm than good.
+      // Especially since most GET requests are for components which have their own means of indicating errors.
+      // NOTE: The above is also true for other status codes like 500, but we had the setup for those for quite some time and I don't want to change it now.
+      //       Before SOLWEB-5536, we did not show anything for status code 0, hence we had no issues with e.g. error messages on connection loss.
+      //       This restores the old behavior for GET requests, keeping the new behavior for all others.
+      if(settings.type && settings.type.toUpperCase() === "GET")
+        return;
+      else {
+        // For other request types, it is likely that the user did something to initiate the request, so an error message makes sense
+        onServerError(event, jqXhr, settings);
+      }      
+    });
+
+    setup.attachHandler(419, onSessionExpired);
+    setup.attachHandler(420, onUserLocked);
+    setup.attachHandler(403, onAccessForbidden);
+    setup.attachHandler(422,
+      function (event, jqXhr, settings) {
+        if (setupUtils.isRequestHandled(jqXhr))
+          return;
+
+        var maybeError = helpers.tryGetJsonError(jqXhr);
+        if (maybeError) {
+          $.notify({ message: maybeError.message }, { type: "danger" });
+          setupUtils.markRequestHandled(jqXhr);
+        }
+      });
+    setup.attachHandler(401, onAccessForbidden);
+    setup.attachHandler(200,
+      function (event, jqXhr, settings) {
+        if (!jqXhr.responseJSON)
+          return;
+
+        maybeShowUserNotification(jqXhr.responseJSON);
+      });
+  })();
+</script>
+<script>
+    $(function setupPwa() {
+      if (!("serviceWorker" in navigator)) {
+        return;
+      }
+
+      function onError(e) {
+        console.error("Error while registering service worker", e);
+      }
+
+      try {
+        navigator.serviceWorker
+          .register("/serviceworker.js")
+          .catch(onError);
+      } catch (e) {
+        onError(e);
+      }
+    });
+  </script>
+<div class="modal fade meteo-pro-selection-dialog" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="js-modal-content modal-content js-dialog">
+<div class="modal-header js-modal-button-container-top">
+<button class="js-close-icon close" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="js-modal-title modal-title">(title)</h4>
+</div>
+<div class="modal-body js-modal-body"><div></div></div>
+<div class="modal-footer js-modal-button-container-bottom"><button class="btn btn-link js-dialog-cancel-button mod-secondary" data-triggered-by-key="Escape" type="button">Abbrechen</button><button class="btn btn-primary js-dialog-ok-button" type="button">OK</button></div>
+</div>
+</div>
+</div><div class="modal fade meteo-pro-selection-dialog" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="js-modal-content modal-content js-dialog">
+<div class="modal-header js-modal-button-container-top">
+<button class="js-close-icon close" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="js-modal-title modal-title">(title)</h4>
+</div>
+<div class="modal-body js-modal-body"><div></div></div>
+<div class="modal-footer js-modal-button-container-bottom"><button class="btn btn-link js-dialog-cancel-button mod-secondary" data-dismiss="modal" type="button">Abbrechen</button><button class="btn btn-primary js-dialog-ok-button" data-dismiss="modal" data-triggered-by-key="Enter" type="button">OK</button></div>
+</div>
+</div>
+</div><div class="modal fade meteo-pro-selection-dialog" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="js-modal-content modal-content js-dialog">
+<div class="modal-header js-modal-button-container-top">
+<button class="js-close-icon close" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="js-modal-title modal-title">(title)</h4>
+</div>
+<div class="modal-body js-modal-body"><div></div></div>
+<div class="modal-footer js-modal-button-container-bottom"><button class="btn btn-link js-dialog-cancel-button mod-secondary" data-triggered-by-key="Escape" type="button">Abbrechen</button><button class="btn btn-primary js-dialog-ok-button" data-dismiss="modal" type="button">OK</button></div>
+</div>
+</div>
+</div><div class="modal fade meteo-pro-selection-dialog" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="js-modal-content modal-content js-dialog">
+<div class="modal-header js-modal-button-container-top">
+<button class="js-close-icon close" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="js-modal-title modal-title">(title)</h4>
+</div>
+<div class="modal-body js-modal-body"><div></div></div>
+<div class="modal-footer js-modal-button-container-bottom"><button class="btn btn-primary js-dialog-ok-button" data-dismiss="modal" type="button">OK</button></div>
+</div>
+</div>
+</div><script src="/node_modules/bootstrap-select/dist/js/i18n/defaults-de_DE.js?v=OH_cdQ-N2j_16k5yN4WSn8lHQ2"></script></body></html>
