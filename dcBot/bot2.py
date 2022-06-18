@@ -6,7 +6,7 @@ import pyautogui as pg
 from urllib import parse, request
 import re
 
-token = "ODc1NDM1OTc0NDgwNTIzMzE0.YRVfSQ.OW2dEq6a_l9imr_Qce2aBGLcjjQ"
+token = "token"
 
 bot = commands.Bot(command_prefix='>', description="This is a Helper Bot")
 
