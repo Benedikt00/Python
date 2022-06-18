@@ -2,7 +2,7 @@ import discord
 import time
 import asyncio
 
-token = "ODc1NDM1OTc0NDgwNTIzMzE0.YRVfSQ.OW2dEq6a_l9imr_Qce2aBGLcjjQ"
+token = "token"
 
 client = discord.Client()
 obfuckkinder = ["vogi31#0926", "Johannes#1695"]
