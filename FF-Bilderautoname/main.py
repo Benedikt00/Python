@@ -1,6 +1,6 @@
 import os
 
-folderRel = "images/images_startseite" # ohne / am ende
+folderRel = "18.6.2022" # ohne / am ende
 
 
 folderRel.replace("\\", "/")
@@ -10,7 +10,7 @@ if folderRel[:-1] != "/":
 
 listPicNames = []
 
-folder = r"C:\Users\bsimb\Documents\Programmieren_Privat\GitHub\Benedikt00.github.io\images\images_startseite"
+folder = r"C:\Users\bsimb\Documents\Programmieren_Privat\GitHub\Feuerwehr_2.0\pages\aktuelles\18.6.2022"
 
 folder.replace("\\", "/")
 print(folder)
@@ -32,5 +32,5 @@ for count, filename in enumerate(os.listdir(folder)):
 #<img src="images/slide-1.jpg" alt="img" /><img src="images/slide-2.jpg" alt="img" /><img src="images/slide-3.jpg" alt="img" />
 
 for name in listPicNames:
-    s = f"<img src=\"{folderRel}{name}\" alt=\"img\" />"
+    s = f"<img src=\"{folderRel}{name}\" class=\"bild\" alt=\"img\" />"
     print(s)

@@ -11,6 +11,7 @@ def get_weather_data():
         stbewoelkt = "Stark bewölkt"
         heiter = "Heiter"
         regen = "Regen"
+        gewitter = "Gewitter"
 
         tonum = None
 
@@ -26,6 +27,8 @@ def get_weather_data():
             tonum = 4
         elif var == regen:
             tonum = 5
+        elif var == gewitter:
+            tonum = 6
 
         else:
             print(str(var) + " add this to se code")

@@ -75,7 +75,6 @@ def main():
 
                 newfile.close()
 
-
             wtf = open(pathnew, "a")
 
             aztime = time.strftime("%H:%M:%S %d. %m. %y", akttime)
@@ -88,7 +87,7 @@ def main():
 
             pathacdata = "C:/wamp64/www/fileupload-master/data/actdata.txt"
 
-            #open the file for the website
+            #open the file for the data
             with open(pathacdata, 'r') as file:
                 data = file.readlines()
             data[0] = str(var) + " W " + str(aztime) + "\n"

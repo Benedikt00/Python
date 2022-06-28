@@ -1,4 +1,5 @@
 from playwright.sync_api import Playwright, sync_playwright
+import asyncio
 from bs4 import BeautifulSoup
 import time
 from time import sleep
@@ -18,9 +19,13 @@ while run:
                 page.goto("http://192.168.0.4/")
 
                 page.goto("http://192.168.0.4/#/login")
+                sleep(8)
 
-                page.fill('#login-table-full-width login-table-input ng-pristine ng-untouched ng-valid', 'Einstein123')
-                page.select_option("select", label="admin")
+                page.locator('text="-- Benutzer auswählen --"', force=True).click()
+
+
+                page.fill('input[name="password"]', "Einstein123")
+
 
                 with page.expect_navigation():
                     page.click("button:has-text(\"Login\")")
