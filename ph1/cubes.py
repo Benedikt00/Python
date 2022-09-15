@@ -6,8 +6,11 @@ pygame.init()
 wScreen = 1800
 hScreen = 500
 
-gew1 = 30
+gew1 = 40
 gew2 = 30
+
+startvel1 = 10
+startvel2 = 10
 
 def regulation(g1, g2):
     g1 = math.sqrt(g1 ** 2)
@@ -26,8 +29,7 @@ massbox1 = gges[0]
 massbox2 = gges[1]
 
 
-startvel1 = 5
-startvel2 = -2
+
 
 def regulation(w1, w2):
     w1 = math.sqrt(w1 ** 2)

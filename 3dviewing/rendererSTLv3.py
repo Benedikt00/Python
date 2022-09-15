@@ -145,7 +145,7 @@ while run:
             p0 = np.matmul(projection_rotation_matrix, np.transpose(el[0]))
             p1 = np.matmul(projection_rotation_matrix, np.transpose(el[1]))
             p2 = np.matmul(projection_rotation_matrix, np.transpose(el[2]))
-            #                    x                                          y
+            #                       x                                    y
             p0ap = ((center[0] + p0[0] * Scale) + xMove, (center[1] + p0[1] * Scale) + yMove)
             p1ap = ((center[0] + p1[0] * Scale) + xMove, (center[1] + p1[1] * Scale) + yMove)
             p2ap = ((center[0] + p2[0] * Scale) + xMove, (center[1] + p2[1] * Scale) + yMove)

@@ -1,0 +1,36 @@
+{
+   "Body" : {
+      "Inverters" : {
+         "1" : {
+            "DT" : 126,
+            "E_Day" : 15354,
+            "E_Total" : 2479.552734375,
+            "E_Year" : 2803596.75,
+            "P" : 950
+         }
+      },
+      "Site" : {
+         "E_Day" : 15354,
+         "E_Total" : 2479.5527777777779,
+         "E_Year" : 2803596.75,
+         "Meter_Location" : "unknown",
+         "Mode" : "produce-only",
+         "P_Akku" : null,
+         "P_Grid" : null,
+         "P_Load" : null,
+         "P_PV" : 950,
+         "rel_Autonomy" : null,
+         "rel_SelfConsumption" : null
+      },
+      "Version" : "12"
+   },
+   "Head" : {
+      "RequestArguments" : {},
+      "Status" : {
+         "Code" : 0,
+         "Reason" : "",
+         "UserMessage" : ""
+      },
+      "Timestamp" : "2022-07-01T13:20:03+02:00"
+   }
+}

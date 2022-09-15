@@ -8,18 +8,18 @@ async def getweather():
     client = python_weather.Client(format=python_weather.METRIC)
 
     # fetch a weather forecast from a city
-    weather = await client.find("Vienna")
+    weather = await client.find("Neumarkt in der Steiermark")
 
     # returns the current day's forecast temperature (int)
     print(weather.current.temperature)
 
     # get the weather forecast for a few days
     for forecast in weather.forecasts:
-        print(str(forecast.date), forecast.sky_text, forecast.temperature)
+        print(str(forecast.date), forecast.sky_text, " "* (15 - len(forecast.sky_text)) , forecast.temperature)
 
     # close the wrapper once done
     await client.close()
 
 if __name__ == "__main__":
-    loop = asyncio.new_event_loop() # for Python >= 3.10, otherwise use get_event_loop
+    loop = asyncio.get_event_loop() # for Python >= 3.10, otherwise use get_event_loop
     loop.run_until_complete(getweather())

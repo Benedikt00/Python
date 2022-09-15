@@ -10,6 +10,6 @@ employee_file = open("employees1.txt", "w") #erstellt ein neues dokument und sch
 employee_file.write("aölskjfvboasiru<üäcjkgifosakldgut93rwqopdklsfjtg")
 
 #import time
-#time.sleep(2) #verzögert um 5 sekunden
+#time.sleep(2) #verzögert um 2 sekunden
 #import os
 # #os.remove("employees1.txt") #löscht die Datei
