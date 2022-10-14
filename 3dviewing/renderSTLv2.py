@@ -43,8 +43,8 @@ ProjectionMatrix = [[1, 0, 0],
 
 background_color = (0, 0, 0)
 
-angle = 3.14/3
-angular_change = 0.01
+angle = 3.14/4
+angular_change = 0.00
 distance = 3.001
 Scale = 10
 

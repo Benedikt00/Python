@@ -24,8 +24,7 @@ def convertFromMachineToCoords(cords):
 def checkIfPositionIsValid(position):
     if (-1 < position[0] < X_LEN) and (-1 < position[1] < Y_LEN):
         return True
-    else:
-        return False
+    return False
 
 
 class bed():
@@ -93,13 +92,11 @@ def home(ak_pos):
         redraw_window()
 
 
-
-
-
 bed = bed([wScreen, hScreen], [X_LEN, Y_LEN])
 motor1 = motor([40, hScreen - 40], 0)
 motor2 = motor([wScreen - 40, hScreen - 40], 0)
 head = cnc_head([0, 0])
+
 
 def redraw_window():
     win.fill((255, 255, 255))
@@ -128,16 +125,20 @@ while run:
     key_input = pygame.key.get_pressed()
 
     if key_input[pygame.K_w]:
-        xy_head_pos[1] += 5
+        if checkIfPositionIsValid([xy_head_pos[0], xy_head_pos[1] + 5]):
+            xy_head_pos[1] += 5
 
     if key_input[pygame.K_s]:
-        xy_head_pos[1] -= 5
+        if checkIfPositionIsValid([xy_head_pos[0], xy_head_pos[1] - 5]):
+            xy_head_pos[1] -= 5
 
     if key_input[pygame.K_a]:
-        xy_head_pos[0] -= 5
+        if checkIfPositionIsValid([xy_head_pos[0] - 5, xy_head_pos[1]]):
+            xy_head_pos[0] -= 5
 
     if key_input[pygame.K_d]:
-        xy_head_pos[0] += 5
+        if checkIfPositionIsValid([xy_head_pos[0] + 5, xy_head_pos[1]]):
+            xy_head_pos[0] += 5
 
     if key_input[pygame.K_SPACE]:
         home(xy_head_pos)
