@@ -21,6 +21,22 @@
             [
                 "2022-10-03 19:22:36.961581",
                 199.76
+            ],
+            [
+                "2022-10-28 21:20:08.296180",
+                136.38
+            ],
+            [
+                "2022-11-11 06:40:57.092344",
+                141.29
+            ],
+            [
+                "2022-11-20 19:07:26.158533",
+                136.29
+            ],
+            [
+                "2022-11-20 19:08:12.467251",
+                136.29
             ]
         ],
         "preis_notification_freshold": 160
@@ -47,6 +63,10 @@
             [
                 "2022-10-03 19:22:40.217576",
                 80.66
+            ],
+            [
+                "2022-10-28 21:20:11.255255",
+                84.7
             ]
         ],
         "preis_notification_freshold": 70
@@ -98,12 +118,17 @@
             [
                 "2022-10-03 19:22:43.766577",
                 29.83
+            ],
+            [
+                "2022-10-28 21:20:14.935683",
+                30.24
             ]
         ],
         "preis_notification_freshold": 23
     },
     "KT 8": {
         "amazon": "https://www.amazon.de/-/en/gp/product/B000ONJAU4/ref=sw_img_1?smid=A3JWKAKR8XB7XF&psc=1",
+        "bought": true,
         "datensatz": [
             [
                 "2022-09-11 14:40:56.597721",
@@ -124,6 +149,10 @@
             [
                 "2022-10-03 19:22:46.628577",
                 37.45
+            ],
+            [
+                "2022-10-28 21:20:18.107548",
+                38.17
             ]
         ],
         "preis_notification_freshold": 30
@@ -173,6 +202,10 @@
             ],
             [
                 "2022-10-03 19:23:20.444792",
+                54.44
+            ],
+            [
+                "2022-10-28 21:20:52.502748",
                 54.44
             ]
         ],
@@ -224,12 +257,29 @@
             [
                 "2022-10-03 19:23:55.939828",
                 28.6
+            ],
+            [
+                "2022-10-28 21:20:56.231634",
+                28.86
             ]
         ],
         "preis_notification_freshold": 23
     },
+    "Seitenschneider-Gro\u00df": {
+        "amazon": "https://www.amazon.de/-/en/74-06-200-Cutters-Insulated/dp/B0001D9JE4/ref=sr_1_4?crid=3PRET0ZL56UU4&keywords=seitenschneider%2Bknipex&qid=1667165749&qu=eyJxc2MiOiI0Ljk3IiwicXNhIjoiNC42NCIsInFzcCI6IjQuNDcifQ%3D%3D&sprefix=seitenschneider%2Caps%2C172&sr=8-4&th=1",
+        "bought": false,
+        "datensatz": [],
+        "preis_notification_freshold": 30
+    },
+    "Tastatur-Marci": {
+        "amazon": "https://www.amazon.de/Logitech-G512-CARBON-GX-RED/dp/B07W5JKPSF/ref=mp_s_a_1_5?crid=2UW9L6I9LKV9V&keywords=logitech+gaming+tastatur+g512+carbon&qid=1667165791&qu=eyJxc2MiOiIxLjUxIiwicXNhIjoiMS4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=logitech+tastatur+car%2Caps%2C161&sr=8-5",
+        "bought": false,
+        "datensatz": [],
+        "preis_notification_freshold": 100
+    },
     "Wera_Inbusschluessel": {
         "amazon": "https://www.amazon.de/-/en/Wera-05073593001-SPKL-Multicolour-Allen/dp/B009ODV0OE/ref=sr_1_3?crid=G9ABNMMLP3ZN&keywords=inbusschl\u00fcssel+set&qid=1662676309&sprefix=inbuss%2Caps%2C113&sr=8-3",
+        "bought": true,
         "datensatz": [
             [
                 "2022-09-09 23:26:05.326489",
@@ -258,6 +308,10 @@
             [
                 "2022-10-03 19:23:59.227964",
                 24.04
+            ],
+            [
+                "2022-10-28 21:20:59.813308",
+                24.37
             ]
         ],
         "preis_notification_freshold": 24
@@ -296,6 +350,10 @@
             [
                 "2022-10-03 19:24:32.358294",
                 48.92
+            ],
+            [
+                "2022-10-28 21:21:33.577627",
+                57.05
             ]
         ],
         "preis_notification_freshold": 70
@@ -326,12 +384,17 @@
             [
                 "2022-10-03 19:25:05.880716",
                 24.19
+            ],
+            [
+                "2022-10-28 21:22:07.912750",
+                24.19
             ]
         ],
         "preis_notification_freshold": 25
     },
     "wera_ratschensatz": {
         "amazon": "https://www.amazon.de/-/en/gp/product/B07KRRYVWT/ref=ewc_pr_img_1?smid=A3VB9K0IS5E632&psc=1",
+        "bought": true,
         "datensatz": [
             [
                 "2022-09-10 14:40:47.003342",
@@ -356,16 +419,25 @@
             [
                 "2022-10-03 19:25:38.202318",
                 89.49
+            ],
+            [
+                "2022-10-28 21:22:10.634488",
+                96.9
             ]
         ],
         "preis_notification_freshold": 90
     },
-    "w\u00fcrth-ratschensatz": {
+    "wuerth-ratschensatz": {
         "amazon": "https://www.amazon.de/-/en/gp/product/B01IFIODJM/ref=sw_img_1?smid=A2X06H5H2VVEAZ&psc=1",
+        "bought": true,
         "datensatz": [
             [
                 "2022-10-03 19:25:40.742138",
                 85.38
+            ],
+            [
+                "2022-10-28 21:22:13.455807",
+                86.1
             ]
         ],
         "preis_notification_freshold": 80

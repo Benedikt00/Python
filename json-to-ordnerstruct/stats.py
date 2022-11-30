@@ -16,17 +16,19 @@ def plot_data_day(path_to_day):
                 if keyword not in keywordList:
                     keywordList.append(keyword)"""
 
-                print(filename)
+                #print(filename)
                 p = json.loads(data)["Body"]["Inverters"]["1"]["P"]
-                hour = json.loads(data)["date"]["hour"]
-                minute = json.loads(data)["date"]["minute"]
+                hour = int(json.loads(data)["Head"]["Timestamp"][11:13]) #2022-07-02T14:30:03+02:00
+                #print(hour)
+                minute = int(json.loads(data)["Head"]["Timestamp"][14:16])
                 hour_dez = int(hour) + (int(minute)/60)
                 power_list.append(p)
                 time_list.append(hour_dez)
 
 
-    mpl.plot(time_list, power_list)
 
+    mpl.plot(time_list, power_list)
+    print(power_list, time_list)
     mpl.xlim([6, 22])
     mpl.show()
 
@@ -51,8 +53,8 @@ def plot_data_month(path_to_month):
 
 
 
-#plot_data_day(r"C:\Users\bsimb\Documents\Programmieren_Privat\Python\json-to-ordnerstruct\test\2022\07\03")
-plot_data_month(r"C:\Users\bsimb\Documents\Programmieren_Privat\Python\json-to-ordnerstruct\test\2022\07")
+plot_data_day(r"C:\Users\bsimb\Documents\Programmieren_Privat\Python\json-to-ordnerstruct\test\2022\07\03")
+#plot_data_month(r"C:\Users\bsimb\Documents\Programmieren_Privat\Python\json-to-ordnerstruct\test\2022\07")
 
 
 
