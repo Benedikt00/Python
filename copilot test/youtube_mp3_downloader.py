@@ -49,7 +49,7 @@ while True:
     if inp == "y":
         get_mp3_from_youtube(link)
         print("Downloaded")
-        move_file(path_to_script + file, "Z:/1-Musik/03_From_Script")
+        #move_file(path_to_script + file, "Z:/1-Musik/03_From_Script")
         break
     elif inp == "r":
         pass
