@@ -1,3 +1,5 @@
+
+
 def ASSCI_StlToList(location):
     file = open(location) #open File
     lines = file.readlines()
@@ -25,13 +27,28 @@ def ASSCI_StlToList(location):
 
     return cl
 
-def sorthelp(el):
-    av = (el[0][2] + el[1][2] + el[2][2])/3
-    return av
 
-def sortListforZ(list):
-    list.sort(key=sorthelp, reverse=True)
-    return list
+#def sorthelp(el):
+#    #av = (el[0][2] + el[1][2] + el[2][2])/3
+#    #mx = []
+#    #for i in range(len(el)):
+#    #    mx.append(el[i][-1])
+#
+#    return (el[0][2] + el[1][2] + el[2][2])/3
+#
+#
+#def sortListforZ(list):
+#    what = list.sort(key=sorthelp, reverse=False)
+#    #print(what)
+#    return what
+
+def sorthelp(el):
+    return (el[0][2] + el[1][2] + el[2][2]) / 3
+
+def sortListforZ(my_list):
+    my_list.sort(key=sorthelp, reverse=True)
+    return my_list
+
 
 def Listaveraging(list):
     ar = ASSCI_StlToList(list)
@@ -58,11 +75,13 @@ def Listaveraging(list):
 
     return ar
 
+
 def STLtoList(list, averageing):
     if averageing:
         return Listaveraging(list)
     else:
         return ASSCI_StlToList(list)
+
 
 def getSurfaceNormals(file):
     file = open(file)  # open File
@@ -70,12 +89,13 @@ def getSurfaceNormals(file):
     cords = []
     for i in lines:
         if "facet normal" in i:  # leaves only the normals to use
-            i = i[16:-2]
+            i = i[16:-1]
             i = i.split()
             cords.append(i)
     #convert to float
     for i in range(len(cords)):
         for j in range(len(cords[i])):
-            cords[i][j] = float(cords[i][j])
+
+            cords[i][j] = float(str(cords[i][j]))
 
     return cords

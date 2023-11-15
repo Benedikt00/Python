@@ -12,13 +12,11 @@ hScreen = 500
 win = pygame.display.set_mode((wScreen, hScreen))
 
 clock = pygame.time.Clock()
-fps = 30
+fps = 50
 
 file = "benedikt v2.STL"
 
 listTriangle = STLtoList(file, True)
-
-
 
 normals = getSurfaceNormals(file)
 
@@ -63,8 +61,10 @@ def drawtriangle(xy1, xy2, xy3):
     pygame.draw.lines(win, color, True, (xy2, xy3), 2)
     pygame.draw.lines(win, color, True, (xy3, xy1), 2)
 
+
 def drawpolygone(xy1, xy2, xy3, color):
     pygame.draw.polygon(win, color, [xy1, xy2, xy3])
+
 
 def getRotationMatrix(angle):
     rotation_matrix_x = [
@@ -119,10 +119,11 @@ while run:
     TriAfterRotation = []
     for el in range(len(listTriangle)):
         av = [np.matmul(rotation_matrix, np.transpose(listTriangle[el][0])), np.matmul(rotation_matrix, np.transpose(listTriangle[el][1])), np.matmul(rotation_matrix, np.transpose(listTriangle[el][2]))]
-
         TriAfterRotation.append(av)
 
     sortListforZ(TriAfterRotation)
+
+    #print(TriAfterRotation)
 
     for el in range(len(TriAfterRotation)):
         normal = np.matmul(rotation_matrix, normals[el])
@@ -132,11 +133,7 @@ while run:
         if ck > 0:
 
             sth = normal[0] * lightDirection[0] + normal[1] * lightDirection[1] + normal[2] * lightDirection[2]
-
-            rgb = 255 * sth
-            print(rgb)
-            if rgb > 255:
-                rgb = 255
+            rgb = abs(255 * sth)
 
             color = (rgb, rgb, rgb)
 

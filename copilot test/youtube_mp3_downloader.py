@@ -17,7 +17,7 @@ def link_from_searchtherm(search):
     return [link, title]
 
 def get_mp3_from_youtube(link):
-    import youtube_dl
+    import yt_dlp as youtube_dl
     ydl_opts = {
         'format': 'bestaudio/best',
         'outtmpl': '%(title)s.%(ext)s',

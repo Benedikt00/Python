@@ -40,8 +40,14 @@ def check_answer(frage, answer, score):
 
 for frage_ in fragen:
     print_question(frage_)
-    answer = input("Antwort: ")
-    score = check_answer(frage_, int(answer), score)
+
+    while True:
+        answer = input("Antwort: ")
+        if answer in [1, 2, 3]:
+            score = check_answer(frage_, int(answer), score)
+            break
+        else:
+            print("Answer Invalide")
     input()
     os.system('cls')
     
@@ -59,8 +65,9 @@ with open("scores.json", "w") as f:
     f.truncate(0)
     f.write(json.dumps(inhalt))
 
-#def print_scores(inhalt):
-#    print("Score Board: ")
+def print_scores(inhalt):
+    print("Score Board: ")
+    print(inhalt)
 
 
 
