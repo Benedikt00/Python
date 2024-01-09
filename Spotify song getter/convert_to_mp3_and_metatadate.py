@@ -24,6 +24,7 @@ def process_mp3_file(mp3_file):
         filename = os.path.basename(mp3_file)
         artist, title = filename.split(' - ', 1)
         artist = artist.strip().replace(",", ";")
+        artist = artist.strip().replace(",", "&")
         title = title.strip().split('.mp', 1)
         print(filename)
 
@@ -52,8 +53,9 @@ def process_file(file_path):
 
 # Main function
 def main():
-    file_path = r'C:\Users\bsimb\Documents\Programmieren_Privat\Python\Spotify song getter\destination_folder\Dies und jenes\MO - Lean on.mp3'  # Replace with the path to the root folder
+    file_path = r'C:\Users\bsimb\Music\Musik\Dies und jenes'  # Replace with the path to the root folder
     process_file(file_path)
+
 
 if __name__ == "__main__":
     main()

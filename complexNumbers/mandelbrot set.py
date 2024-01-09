@@ -11,15 +11,16 @@ ymax = 1
 xmin = -1.5
 xmax = 0.5
 
+
 def checkifconw(cp):
     v = 0
+    #v = cp
     for x in range(100):
         v = v*v + cp
 
         if v.imag + v.real >= 100:
             return True
     return False
-
 
 
 while ymin <= ymax:

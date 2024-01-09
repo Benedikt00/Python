@@ -43,7 +43,7 @@ for frage_ in fragen:
 
     while True:
         answer = input("Antwort: ")
-        if answer in [1, 2, 3]:
+        if int(answer) in [1, 2, 3]:
             score = check_answer(frage_, int(answer), score)
             break
         else:
@@ -62,7 +62,7 @@ inhalt = json.loads(inhalt)
 inhalt[user] = str(score)
 
 with open("scores.json", "w") as f:
-    f.truncate(0)
+    #f.truncate(0)
     f.write(json.dumps(inhalt))
 
 def print_scores(inhalt):

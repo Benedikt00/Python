@@ -7,8 +7,8 @@ def change_metadata(file_path):
 	try:
 		audiofile = eyed3.load(file_path)
 
-		audiofile.tag.artist = audiofile.tag.artist.replace(" &", ";")
-
+		audiofile.tag.artist = audiofile.tag.artist.replace(" feat.", ",")
+		print(f"Changed metadata for {file_path}")
 		audiofile.tag.save()
 	except Exception as e:
 		print(file_path, " ------------------------ Error")
@@ -21,7 +21,7 @@ def process_files_in_folder(folder_path):
 			if file.endswith(".mp3"):
 				file_path = os.path.join(root, file)
 				change_metadata(file_path)
-				print(f"Changed metadata for {file_path}")
+
 
 
 # Specify the folder containing the MP3 files

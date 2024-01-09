@@ -4,27 +4,28 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import move
 import settings
 
+import os
+from youtubesearchpython import VideosSearch
+from pytube import YouTube
+
 # Replace with your own Spotify API credentials
 client_id = settings.client_id
 client_secret = settings.client_secret
 
-artist_folder = settings.wix_alles_eine
-file_path = settings.artist_file  # Replace with the path to your text file
+dump_folder = settings.wix_alles_eine
+artist_name_file_path = settings.artist_file  # Replace with the path to your text file
+root_folder = settings.root_folder
 
 # Initialize the Spotify API client
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
-import os
-from youtubesearchpython import VideosSearch
-from pytube import YouTube
-
 
 def download_song(song_name, artist_name):
 	# Create a folder for the artist if it doesn't exist
 
-	if not os.path.exists(artist_folder):
-		os.makedirs(artist_folder)
+	if not os.path.exists(dump_folder):
+		os.makedirs(dump_folder)
 
 	# Perform a YouTube search with the song name and artist
 	search_query = f"{song_name} {artist_name} audio"
@@ -37,8 +38,9 @@ def download_song(song_name, artist_name):
 			yt = YouTube(video_url)
 			audio_stream = yt.streams.filter(only_audio=True).first()
 			mp3_filename = f"{artist_name} - {song_name}.mp3"
-			mp3_filepath = os.path.join(artist_folder, mp3_filename)
-			audio_stream.download(output_path=artist_folder, filename=mp3_filename)
+			mp3_filepath = os.path.join(dump_folder, mp3_filename)
+
+			audio_stream.download(output_path=dump_folder, filename=mp3_filename)
 
 			return mp3_filepath
 
@@ -111,6 +113,7 @@ def get_top_songs(artist_name):
 	else:
 		download_mp3(artist_name, top_tracks['tracks'][:20])
 
+
 def read_file_to_array(file_path):
 	try:
 		with open(file_path, 'r+') as file:
@@ -128,7 +131,7 @@ def read_file_to_array(file_path):
 
 # Example usage:
 
-artists = read_file_to_array(file_path)
+artists = read_file_to_array(artist_name_file_path)
 
 print(artists)
 
@@ -141,5 +144,5 @@ for act_artist in artists:
 move.move_files()
 
 if input("Wanna delete File contens?(y/n) ") == "y":
-	with open(file_path, 'r+') as file:
+	with open(artist_name_file_path, 'r+') as file:
 		file.truncate(0)

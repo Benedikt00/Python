@@ -17,7 +17,7 @@ OUTPUT_FILE_NAME = settings.output_csv
 download_folder = settings.wix_alles_eine  # Replace with your desired download folder
 
 # change for your target playlist
-PLAYLIST_LINK = "https://open.spotify.com/playlist/7ndsEsh5BfeJsR7nv4OCUT?si=74d44191a1c54a5d"
+PLAYLIST_LINK = "https://open.spotify.com/playlist/7ndsEsh5BfeJsR7nv4OCUT?si=6a42758843e74644"
 
 # authenticate
 client_credentials_manager = SpotifyClientCredentials(
